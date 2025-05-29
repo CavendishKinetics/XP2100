@@ -1,0 +1,8 @@
+Script LowPower
+	Wait until scriptTrigger0
+	Generate LowPowerMode
+	Wait until scriptTrigger0
+	Generate State00
+	Wait until scriptTrigger0
+	Generate Shunt00
+end Script

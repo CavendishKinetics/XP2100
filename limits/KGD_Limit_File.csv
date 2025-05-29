@@ -1,0 +1,25 @@
+Test Number,Test Name,Variant,Low Limit,High Limit,Software Bin(Embedded in Code),Comments
+1001,IVIO_State0x00,26,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,56,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,86,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,27,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,57,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,87,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,29,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,59,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,89,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,37,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,67,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+1001,IVIO_State0x00,97,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,26,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,56,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,86,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,27,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,57,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,87,100,200,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,29,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,59,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,89,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,37,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,67,160,280,15 - LeakageActive,Dynamic Limit based on Variant
+4000,IVIO_State0x00_Final,97,160,280,15 - LeakageActive,Dynamic Limit based on Variant
