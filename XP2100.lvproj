@@ -591,8 +591,6 @@
 			<Item Name="Calc_Parallel_Resitance.vi" Type="VI" URL="../Utility/Calc_Parallel_Resitance.vi"/>
 			<Item Name="Channel List to Channel Array.vi" Type="VI" URL="../Utility/Channel List to Channel Array.vi"/>
 			<Item Name="Create Walking Ones State array.vi" Type="VI" URL="../Utility/Create Walking Ones State array.vi"/>
-			<Item Name="ExtendedRegisterRead_No hardware compare.vi" Type="VI" URL="../../AD2255/Instruments/HSDIO/MIPI_RFFE/High Level Commands/ExtendedRegisterRead_No hardware compare.vi"/>
-			<Item Name="InitiateMIPI_RFFE_No hardware compare.vi" Type="VI" URL="../../AD2255/Instruments/HSDIO/MIPI_RFFE/High Level Commands/InitiateMIPI_RFFE_No hardware compare.vi"/>
 			<Item Name="Insert SET ID Signal.vi" Type="VI" URL="../Instruments/HSDIO/Insert SET ID Signal.vi"/>
 			<Item Name="mS Timer.vi" Type="VI" URL="../Utility/mS Timer.vi"/>
 			<Item Name="nidcpower_32.dll" Type="Document" URL="nidcpower_32.dll">
@@ -610,8 +608,6 @@
 			<Item Name="niScope_32.dll" Type="Document" URL="niScope_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="RegisterRead_no HW Compare.vi" Type="VI" URL="../../AD2255/Instruments/HSDIO/MIPI_RFFE/High Level Commands/RegisterRead_no HW Compare.vi"/>
-			<Item Name="Select Specifc Bit Values.vi" Type="VI" URL="../Utility/Select Specifc Bit Values.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
