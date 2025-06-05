@@ -1,18 +1,17 @@
-Waveform_Name,USID,Register,Data(DEC)
-BRGu8r1Cd64,8,1C,64
-BRGu8r1Cd57,8,1C,57
-BRGu8r0d13,8,0,13
-BRGu8r4d7,8,4,7
-BRGu8rCd1,8,C,1
-BRGu8r3d32,8,3,32
-BRGu8r2Bd4,8,2B,4
-BRGu8r4d103,8,4,103
-BRGu8r5d255,8,5,255
-BRGu8r6d185,8,6,185
-BRGu8r7d6,8,7,6
-BRGu8r3d96,8,3,96
-BRGu8r4Ad242,8,4A,242
-BRGu8r4Bd242,8,4B,242
-BRGu8r60d244,8,60,244
-BRGu8r61d242,8,61,242
-BRGu8r4Ad244,8,4A,244
+Waveform_Name,USID,Register,Data(DEC),
+BRGu8r1Cd64,8,1C,64,bridge reset
+BRGu8r1Cd57,8,1C,57,"active mode, mask triggers"
+BRGu8r0d13,8,0,13,RFFE SCLK=26MHz
+BRGu8r4d7,8,4,7,"disable DCO_CAL_EN, Full-Rate Read"
+BRGu8rCd1,8,C,1,force DCO_DIRECT to 0
+BRGu8r3d32,8,3,32,"PE_EN=Low, OVS=16"
+BRGu8r2Bd4,8,2B,4,50pF SDATA drive strength
+BRGu8r4d103,8,4,103,"enable DCO_CAL_EN, Full-Rate Read, IGNORE ALL ERRORS"
+BRGu8r5d255,8,5,255,SuBUS_A and B outputs at max 350pF drive
+BRGu8r6d187,8,6,187,turn of both SuBUS_B and C ports and enable double cal/dwell 10. SuBUS A On
+BRGu8r7d6,8,7,6,enable data flow for both SuBUS_A and B ports
+BRGu8r3d96,8,3,96,"PE_EN=High, OVS=16, EXTRA CLOCKS disABLED"
+BRGu8r4Ad242,8,4A,242,This assigns  USID 2  to to SuBUS A0
+BRGu8r4Bd249,8,4B,249,This assigns  USID 9  to to SuBUS A0
+BRGu8r4Cd254,8,4C,254,This assigns  USID 14  to to SuBUS A0
+BRGu8r4Dd253,8,4D,253,This assigns  USID 13  to to SuBUS A0. Extra USID for my evb setup w DUT from another part

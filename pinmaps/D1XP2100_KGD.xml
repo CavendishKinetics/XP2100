@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PinMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:pm="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" schemaVersion="1.0" xsi:schemaLocation="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd C:/Program%20Files%20(x86)/National%20Instruments/TestStand%202012/Components/Schemas/NI_SemiconductorModule/PinMap.xsd">
+	<Pins>
+   		<DUTPin name="CLK"/>
+		<DUTPin name="SDA"/>
+		<DUTPin name="VIO_Bridge"/>
+		<DUTPin name="VSU"/>
+		<DUTPin name="VP"/>
+		<DUTPin name="VIO_DUT"/>
+		<DUTPin name="HV"/>
+		<DUTPin name="PI0"/>
+		<DUTPin name="SOI_CLK"/>
+	</Pins>
+	
+	<Instruments>
+		<NIHSDIOInstrument name="6556_0" numberOfChannels="24" />
+		<NIDCPowerInstrument name="4139_0" numberOfChannels="1"/>
+		<NIDCPowerInstrument name="4139_1" numberOfChannels="1"/>
+		<NIDCPowerInstrument name="4145_1" numberOfChannels="4"/>
+		<Instrument name="5152_0" instrumentTypeId="SCOPE">
+				<ChannelGroup id="allChannels">
+					<Channel id="0"/>
+					<Channel id="1"/>
+				</ChannelGroup>
+		</Instrument>
+	</Instruments>
+	
+	<Sites>
+		<Site siteNumber="0"/>
+	</Sites>
+	
+	<Connections>
+		<!-- Site 0 -->
+		<Connection pin="CLK" siteNumber="0" instrument="6556_0" channel="4"/>
+		<Connection pin="SDA" siteNumber="0" instrument="6556_0" channel="6"/>
+		<Connection pin="VIO_Bridge" siteNumber="0" instrument="4145_1" channel="0"/>
+		<Connection pin="VSU" siteNumber="0" instrument="4145_1" channel="1"/>
+		<Connection pin="VP" siteNumber="0" instrument="4145_1" channel="2"/>
+		<Connection pin="VIO_DUT" siteNumber="0" instrument="4145_1" channel="3"/>
+		<Connection pin="HV" siteNumber="0" instrument="4139_1" channel="0"/>
+		<Connection pin="PI0" siteNumber="0" instrument="4139_0" channel="0"/>
+		<Connection pin="SOI_CLK" siteNumber="0" instrument="5152_0" channel="0"/>
+	</Connections>
+</PinMap>
