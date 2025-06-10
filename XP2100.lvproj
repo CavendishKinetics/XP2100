@@ -655,6 +655,7 @@
 				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 			</Item>
+			<Item Name="Bridge_Read RFFE_w_Waveform.vi" Type="VI" URL="../Instruments/HSDIO/Bridge_Read RFFE_w_Waveform.vi"/>
 			<Item Name="Insert SET ID Signal.vi" Type="VI" URL="../Instruments/HSDIO/Insert SET ID Signal.vi"/>
 			<Item Name="nidcpower_32.dll" Type="Document" URL="nidcpower_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

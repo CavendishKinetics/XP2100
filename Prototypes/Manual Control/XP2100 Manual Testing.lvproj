@@ -161,6 +161,7 @@
 				<Item Name="niHSDIO Init Generation Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO Init Generation Session.vi"/>
 				<Item Name="niHSDIO Initiate.vi" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO Initiate.vi"/>
 				<Item Name="niHSDIO IVI Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO IVI Error Converter.vi"/>
+				<Item Name="niHSDIO Send Software Edge Trigger.vi" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO Send Software Edge Trigger.vi"/>
 				<Item Name="niHSDIO Wait Until Done.vi" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO Wait Until Done.vi"/>
 				<Item Name="niHSDIO Write Named Waveform (1D U8).vi" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO Write Named Waveform (1D U8).vi"/>
 				<Item Name="niHSDIO Write Named Waveform (1D U16).vi" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO Write Named Waveform (1D U16).vi"/>
@@ -182,6 +183,8 @@
 				<Item Name="niHSDIO_ctl Trigger DigPat - Trigger When Values (Ring).ctl" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO_ctl Trigger DigPat - Trigger When Values (Ring).ctl"/>
 				<Item Name="niHSDIO_ctl Trigger Script - trigID Values (Ring).ctl" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO_ctl Trigger Script - trigID Values (Ring).ctl"/>
 				<Item Name="niHSDIO_ctl Trigger Source Values (Ring).ctl" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO_ctl Trigger Source Values (Ring).ctl"/>
+				<Item Name="niHSDIO_ctl Trigger SW - TrigIdentifier Values (Ring).ctl" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO_ctl Trigger SW - TrigIdentifier Values (Ring).ctl"/>
+				<Item Name="niHSDIO_ctl Trigger SW - TrigName Values (Ring).ctl" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO_ctl Trigger SW - TrigName Values (Ring).ctl"/>
 				<Item Name="niHSDIO_ctl Voltage Logic Family Values (Ring).ctl" Type="VI" URL="/&lt;instrlib&gt;/niHSDIO/niHSDIO.llb/niHSDIO_ctl Voltage Logic Family Values (Ring).ctl"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
@@ -262,7 +265,7 @@
 			<Item Name="Configuration.ctl" Type="VI" URL="../../../Instruments/HSDIO/MIPI_RFFE/Ctrls/Configuration.ctl"/>
 			<Item Name="Configure HSDIO.vi" Type="VI" URL="../Instruments/HSDIO/Configure HSDIO.vi"/>
 			<Item Name="Configure_All SMUs_Manual.vi" Type="VI" URL="../Instruments/SMU/Configure_All SMUs_Manual.vi"/>
-			<Item Name="Convert Readback Register Info for Bridge.vi" Type="VI" URL="../../../Utility/Convert Readback Register Info for Bridge.vi"/>
+			<Item Name="Convert Readback Register Info for Bridge.vi" Type="VI" URL="../../../Utility/Bridge/Convert Readback Register Info for Bridge.vi"/>
 			<Item Name="Convert Waveform to Data.vi" Type="VI" URL="../../../Instruments/HSDIO/MIPI_RFFE/Convert Waveform to Data.vi"/>
 			<Item Name="Create and Run Script.vi" Type="VI" URL="../Instruments/HSDIO/Create and Run Script.vi"/>
 			<Item Name="Create RFFE Read Waveform_wo_SetID.vi" Type="VI" URL="../../../Instruments/HSDIO/MIPI_RFFE/Create RFFE Read Waveform_wo_SetID.vi"/>
@@ -273,6 +276,7 @@
 			<Item Name="Initialize_SMU&apos;s.vi" Type="VI" URL="../Instruments/SMU/Initialize_SMU&apos;s.vi"/>
 			<Item Name="InitiateMIPI_RFFE.vi" Type="VI" URL="../../../Instruments/HSDIO/MIPI_RFFE/High Level Commands/InitiateMIPI_RFFE.vi"/>
 			<Item Name="InitiateMIPI_RFFE_No hardware compare.vi" Type="VI" URL="../../../Instruments/HSDIO/MIPI_RFFE/High Level Commands/InitiateMIPI_RFFE_No hardware compare.vi"/>
+			<Item Name="Manually Test Script.vi" Type="VI" URL="../Instruments/HSDIO/Manually Test Script.vi"/>
 			<Item Name="nidcpower_32.dll" Type="Document" URL="nidcpower_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
