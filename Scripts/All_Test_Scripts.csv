@@ -13,14 +13,25 @@ FUSEBLOW,Start,Reg_Write,16,98,Set Program Duration Time to 10us
 HybridODFT,Start,Reg_Write,0,0,Set State 00
 ,,Delay,1,1,
 ,,Reg_Write,0,1,Set State 01
-,,Delay,1,,
+,,Delay,1,1,
 ,,Reg_Write,0,2,Set State 02
 ,,Delay,1,1,
 ,,Reg_Write,0,4,Set State 04
 ,,Delay,1,1,
-,,Reg_Write,0,8,Set State 06
-,,Delay,1,1,
-,End,Reg_Write,0,0,Set State 08
+,,Reg_Write,0,8,Set State 08
+,End,Delay,1,1,
 REVERSEIVIOKGD,Start,Reg_Write,1C,56,Active Mode
 ,,Delay,1,1,mSec
 ,End,Reg_Write,1C,128,Low Power Mode
+HVHYST,Start,Reg_Write,10,27,42V
+,,Delay,1,1,mSec
+,,Reg_Write,10,28,43V
+,,Delay,1,1,
+,,Reg_Write,10,29,44V
+,,Delay,1,1,
+,,Reg_Write,10,30,45V
+,,Delay,1,1,
+,,Reg_Write,10,31,46V
+,,Delay,1,1,
+,,Reg_Write,10,26,41V
+,End,Delay,1,1,
