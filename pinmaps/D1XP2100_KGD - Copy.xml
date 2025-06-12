@@ -6,6 +6,7 @@
 		<DUTPin name="VIO_Bridge"/>
 		<DUTPin name="VSU"/>
 		<DUTPin name="VP"/>
+		<DUTPin name="VIO_DUT"/>
 		<DUTPin name="HV"/>
 		<DUTPin name="PI0"/>
 		<DUTPin name="SOI_CLK"/>
@@ -15,7 +16,7 @@
 		<NIHSDIOInstrument name="6556_0" numberOfChannels="24" />
 		<NIDCPowerInstrument name="4139_0" numberOfChannels="1"/>
 		<NIDCPowerInstrument name="4139_1" numberOfChannels="1"/>
-		<NIDCPowerInstrument name="4145_0" numberOfChannels="3"/>
+		<NIDCPowerInstrument name="4145_0" numberOfChannels="4"/>
 		<Instrument name="5152_0" instrumentTypeId="SCOPE">
 				<ChannelGroup id="allChannels">
 					<Channel id="0"/>
@@ -35,6 +36,7 @@
 		<Connection pin="VIO_Bridge" siteNumber="0" instrument="4145_0" channel="0"/>
 		<Connection pin="VSU" siteNumber="0" instrument="4145_0" channel="1"/>
 		<Connection pin="VP" siteNumber="0" instrument="4145_0" channel="2"/>
+		<Connection pin="VIO_DUT" siteNumber="0" instrument="4145_0" channel="3"/>
 		<Connection pin="HV" siteNumber="0" instrument="4139_1" channel="0"/>
 		<Connection pin="PI0" siteNumber="0" instrument="4139_0" channel="0"/>
 		<Connection pin="SOI_CLK" siteNumber="0" instrument="5152_0" channel="0"/>
