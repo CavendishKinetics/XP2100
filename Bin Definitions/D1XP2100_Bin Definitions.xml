@@ -11,6 +11,7 @@
 		<Bin name="High Resistance" number="7" type="Fail"/>
 		<Bin name="Error" number="8" type="Other"/>
 		<Bin name="Stiction" number="9" type="Fail"/>
+		<Bin name="Fuse" number="10" type="Fail"/>
 		<Bin name="SOISwitch" number="60" type="Fail"/>
 	</HardwareBins>
 	<SoftwareBins errorBin="8" defaultPassBin="1" defaultFailBin="8">
@@ -42,5 +43,6 @@
 		<Bin name="Latch" number="54" hardwareBin="6"/>
 		<Bin name="PilotLeakage" number="61" hardwareBin="60"/>
 		<Bin name="ESDLeakage" number="62" hardwareBin="60"/>
+		<Bin name="NotTrimmed" number="63" hardwareBin="10"/>
 	</SoftwareBins>
 </BinDefinitions>
