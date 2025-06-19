@@ -36,16 +36,16 @@ HVHYST,Start,Reg_Write,10,27,42V
 ,,Reg_Write,10,26,41V
 ,End,Delay,100,1,Meas Delay(mS)
 WalkingState,Start,Reg_Write,0,0,Set State 00
-,,Delay,1,1,
+,,Delay,5,1,
 ,,Reg_Write,0,1,Set State 01
-,,Delay,1,1,
+,,Delay,5,1,
 ,,Reg_Write,0,2,Set State 02
-,,Delay,1,1,
+,,Delay,5,1,
 ,,Reg_Write,0,4,Set State 04
-,,Delay,1,1,
+,,Delay,5,1,
 ,,Reg_Write,0,8,Set State 08
-,,Delay,1,1,
+,,Delay,5,1,
 ,,Reg_Write,0,15,Set State 15
-,,Delay,1,1,
+,,Delay,5,1,
 ,,Reg_Write,0,0,Set State 00
 ,End,Delay,1,1,
