@@ -1,5 +1,7 @@
 Script BridgeInit
-	Generate	BRGu8r1Cd56
+	Generate	BRGu8r1Cd64
+	Wait 20	
+	Generate	BRGu8r1Cd57
 	Wait 20	
 	Generate	BRGu8r0d13
 	Wait 20	
@@ -7,25 +9,19 @@ Script BridgeInit
 	Wait 20	
 	Generate	BRGu8rCd1
 	Wait 20	
-	Generate	BRGu8r3d46
+	Generate	BRGu8r3d32
 	Wait 20	
 	Generate	BRGu8r2Bd4
 	Wait 20	
 	Generate	BRGu8r4d103
 	Wait 20	
-	Generate	BRGu8r2d27
-	Wait 20	
-	Generate	BRGu8r5d9
+	Generate	BRGu8r5d255
 	Wait 20	
 	Generate	BRGu8r6d187
 	Wait 20	
-	Generate	BRGu8r7d4
+	Generate	BRGu8r7d6
 	Wait 20	
-	Generate	BRGu8r3d110
-	Wait 20	
-	Generate	BRGu8r1d184
-	Wait 20	
-	Generate	BRGu8r80d2
+	Generate	BRGu8r3d96
 	Wait 20	
 	Generate	BRGu8r4Ad242
 	Wait 20	

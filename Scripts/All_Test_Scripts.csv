@@ -24,17 +24,17 @@ REVERSEIVIOKGD,Start,Reg_Write,1C,56,Active Mode
 ,,Delay,1,1,mSec
 ,End,Reg_Write,1C,128,Low Power Mode
 HVHYST,Start,Reg_Write,10,27,42V
-,,Delay,1,1,mSec
+,,Delay,1,1,Meas Delay(mS)
 ,,Reg_Write,10,28,43V
-,,Delay,1,1,
+,,Delay,1,1,Meas Delay(mS)
 ,,Reg_Write,10,29,44V
-,,Delay,1,1,
+,,Delay,1,1,Meas Delay(mS)
 ,,Reg_Write,10,30,45V
-,,Delay,1,1,
+,,Delay,1,1,Meas Delay(mS)
 ,,Reg_Write,10,31,46V
-,,Delay,1,1,
+,,Delay,1,1,Meas Delay(mS)
 ,,Reg_Write,10,26,41V
-,End,Delay,1,1,
+,End,Delay,100,1,Meas Delay(mS)
 WalkingState,Start,Reg_Write,0,0,Set State 00
 ,,Delay,1,1,
 ,,Reg_Write,0,1,Set State 01
