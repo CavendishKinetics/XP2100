@@ -34,5 +34,13 @@ Script BridgeInit
 	Generate	BRGu8r4Dd244
 	Wait 20	
 	Generate	BRGu8rC1d253
-	wait 400	
+	wait 20
+	Generate 	BRGu2rAd133
+	wait 20
+	Generate 	BRGu8r4Dd254
+	wait 20
+	Generate 	BRGu8rC1d241
+	wait 20
+	Generate 	BRGu8rC1d247
+	wait 400
 end Script
