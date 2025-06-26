@@ -3,26 +3,26 @@ EngMode,Start,Reg_Write,1F,81,Q
 ,,Reg_Write,1F,82,R
 ,,Reg_Write,1F,86,V
 ,End,Reg_Write,1F,79,O
-IVIOKGD,Start,Reg_Write,1C,128,Low_Power_Mode
+IVIOKGD,Start,Reg_Write,1C,128,Low Power Mode
 ,,Delay,1,1,mSec
-,End,Reg_Write,1C,56,Active_Mode
+,End,Reg_Write,1C,56,Active Mode
 SOICLK,Start,Reg_Write,A,133,CP_Boost_OVRD_EN
-,End,Reg_Write,9,128,Test Mux-_soi clk
+,End,Reg_Write,9,128,Test Mux- soi clk
 FUSEBLOW,Start,Reg_Write,16,98,Set Program Duration Time to 10us
 ,End,Reg_Write,17,7,Set Program Dwell Time to Subs 500ns
-HybridODFT,Start,Reg_Write,0,0,Set_State_00
+HybridODFT,Start,Reg_Write,0,0,Set State 00
 ,,Delay,1,1,
-,,Reg_Write,0,1,Set_State_01
+,,Reg_Write,0,1,Set State 01
 ,,Delay,1,1,
-,,Reg_Write,0,2,Set_State_02
+,,Reg_Write,0,2,Set State 02
 ,,Delay,1,1,
-,,Reg_Write,0,4,Set_State_04
+,,Reg_Write,0,4,Set State 04
 ,,Delay,1,1,
-,,Reg_Write,0,8,Set_State_08
+,,Reg_Write,0,8,Set State 08
 ,End,Delay,1,1,
-REVERSEIVIOKGD,Start,Reg_Write,1C,56,Active_Mode
+REVERSEIVIOKGD,Start,Reg_Write,1C,56,Active Mode
 ,,Delay,1,1,mSec
-,End,Reg_Write,1C,128,Low_Power_Mode
+,End,Reg_Write,1C,128,Low Power Mode
 HVHYST,Start,Reg_Write,10,27,42V
 ,,Delay,1,1,Meas Delay(mS)
 ,,Reg_Write,10,28,43V
@@ -35,17 +35,17 @@ HVHYST,Start,Reg_Write,10,27,42V
 ,,Delay,1,1,Meas Delay(mS)
 ,,Reg_Write,10,26,41V
 ,End,Delay,100,1,Meas Delay(mS)
-WalkingState,Start,Reg_Write,0,0,Set_State_00
+WalkingState,Start,Reg_Write,0,0,Set State 00
 ,,Delay,5,1,
-,,Reg_Write,0,1,Set_State_01
+,,Reg_Write,0,1,Set State 01
 ,,Delay,5,1,
-,,Reg_Write,0,2,Set_State_02
+,,Reg_Write,0,2,Set State 02
 ,,Delay,5,1,
-,,Reg_Write,0,4,Set_State_04
+,,Reg_Write,0,4,Set State 04
 ,,Delay,5,1,
-,,Reg_Write,0,8,Set_State_08
+,,Reg_Write,0,8,Set State 08
 ,,Delay,5,1,
-,,Reg_Write,0,15,Set_State_15
+,,Reg_Write,0,15,Set State 15
 ,,Delay,5,1,
-,,Reg_Write,0,0,Set_State_00
+,,Reg_Write,0,0,Set State 00
 ,End,Delay,1,1,
