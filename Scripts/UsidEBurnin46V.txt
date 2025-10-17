@@ -1,0 +1,10 @@
+script UsidEBurnin46V
+Generate uEReg0x10d31
+ repeat 1000
+  	generate uEReg0x0d0
+  	wait 2000
+  	generate uEReg0x0d15
+	wait 2000
+ 	end repeat
+Generate uEReg0x10d26
+end script

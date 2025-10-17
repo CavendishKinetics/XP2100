@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PinMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:pm="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" schemaVersion="1.0" xsi:schemaLocation="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd C:/Program%20Files%20(x86)/National%20Instruments/TestStand%202012/Components/Schemas/NI_SemiconductorModule/PinMap.xsd">
+	<Pins>
+   		<DUTPin name="CLK"/>
+		<DUTPin name="SDA"/>
+		<DUTPin name="VIO_Bridge"/>
+		<DUTPin name="VSU"/>
+		<DUTPin name="VP"/>
+		<DUTPin name="RF1"/>
+		<DUTPin name="RF2"/>
+		<DUTPin name="RF3"/>
+		<DUTPin name="RF4"/>
+		<DUTPin name="RFC"/>
+		<DUTPin name="SW1"/>
+		<DUTPin name="SW2"/>
+	</Pins>
+	
+	<Instruments>
+		<NIHSDIOInstrument name="6556_0" numberOfChannels="24" PFILines="24,25"/>
+		<NIDCPowerInstrument name="4139_0" numberOfChannels="1"/>
+		<NIDCPowerInstrument name="4145_0" numberOfChannels="3"/>
+		<NIDCPowerInstrument name="4145_1" numberOfChannels="4"/>
+	</Instruments>
+	
+	<Sites>
+		<Site siteNumber="0"/>
+	</Sites>
+	
+	<Connections>
+		<!-- Site 0 -->
+		<Connection pin="CLK" siteNumber="0" instrument="6556_0" channel="4"/>
+		<Connection pin="SDA" siteNumber="0" instrument="6556_0" channel="6"/>
+		<Connection pin="VIO_Bridge" siteNumber="0" instrument="4145_0" channel="0"/>
+		<Connection pin="VSU" siteNumber="0" instrument="4145_0" channel="1"/>
+		<Connection pin="VP" siteNumber="0" instrument="4145_0" channel="2"/>
+		<Connection pin="RF1" siteNumber="0" instrument="4145_1" channel="0"/>
+		<Connection pin="RF2" siteNumber="0" instrument="4145_1" channel="1"/>
+		<Connection pin="RF3" siteNumber="0" instrument="4145_1" channel="2"/>
+		<Connection pin="RF4" siteNumber="0" instrument="4145_1" channel="3"/>
+		<Connection pin="RFC" siteNumber="0" instrument="4139_0" channel="0"/>
+		<Connection pin="SW1" siteNumber="0" instrument="6556_0" channel="PFI24"/>
+		<Connection pin="SW2" siteNumber="0" instrument="6556_0" channel="PFI25"/>
+	</Connections>
+</PinMap>

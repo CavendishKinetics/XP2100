@@ -1,0 +1,10 @@
+script Usid9Burnin46V
+Generate u9Reg0x10d31
+ repeat 1000
+  	generate u9Reg0x0d0
+  	wait 2000
+  	generate u9Reg0x0d15
+	wait 2000
+ 	end repeat
+Generate u9Reg0x10d26
+end script

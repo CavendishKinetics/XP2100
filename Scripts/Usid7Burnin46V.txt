@@ -1,0 +1,10 @@
+script Usid7Burnin46V
+Generate u7Reg0x10d31
+ repeat 1000
+  	generate u7Reg0x0d0
+  	wait 2000
+  	generate u7Reg0x0d15
+	wait 2000
+ 	end repeat
+Generate u7Reg0x10d26
+end script
