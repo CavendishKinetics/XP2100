@@ -1,4 +1,4 @@
-Script BridgeInit
+Script BridgeInitModule
 	Generate	BRGu8r1Cd56
 	Wait 20	
 	Generate	BRGu8r0d13
