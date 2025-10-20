@@ -61,7 +61,7 @@
 		<Item Name="Type Definitions" Type="Folder">
 			<Item Name="UI Data.ctl" Type="VI" URL="../controls/UI Data.ctl"/>
 		</Item>
-		<Item Name="XP2100_Manual Test_Main.vi" Type="VI" URL="../XP2100_Manual Test_Main.vi"/>
+		<Item Name="XP2100_Controller_Manual Test_Main.vi" Type="VI" URL="../XP2100_Controller_Manual Test_Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niDCPower Abort.vi" Type="VI" URL="/&lt;instrlib&gt;/niDCPower/nidcpower.llb/niDCPower Abort.vi"/>
@@ -324,7 +324,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{E7BFF366-DAB8-43B4-AA23-0662F14B8EC9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/XP2100_Manual Test_Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/XP2100_Controller_Manual Test_Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
