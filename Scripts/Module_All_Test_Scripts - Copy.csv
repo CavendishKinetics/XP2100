@@ -73,9 +73,9 @@ SHUNT_SH3T,Start,Reg_Write,0,128,Shunt1(RF4 resource)
 ,,Measure,1,2,
 ,,Reg_Write,0,0,
 ,End,Delay,1,1,mSec
-GUARDIAN,Start,Reg_Write,2,32,Guardian On
+GUARDIAN,Start,Bit_Write,2,1,Guardian On
 ,,Measure,5,1,
-,,Reg_Write,2,0,Guardian Off
+,,Bit_Write,2,0,Guardian Off
 ,,Measure,5,2,
 ,End,Delay,1,1,mSec
 LOWCURRENT,Start,Reg_Write,1C,56,Active Mode
