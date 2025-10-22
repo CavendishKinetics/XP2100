@@ -1,6 +1,6 @@
 script Usid2Burnin46V
 Generate u2Reg0x10d31
- repeat 1
+ repeat 1000
   	generate u2Reg0x0d0
   	wait 2000
   	generate u2Reg0x0d15
