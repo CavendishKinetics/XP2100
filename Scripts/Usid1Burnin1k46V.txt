@@ -1,4 +1,4 @@
-script Usid1Burnin46V
+script Usid1Burnin1k46V
 Generate u1Reg0x10d31
  repeat 1000
   	generate u1Reg0x0d0

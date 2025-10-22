@@ -1,0 +1,8 @@
+script Usid4Burnin10k41V
+ repeat 10000
+  	generate u4Reg0x0d0
+  	wait 2000
+  	generate u4Reg0x0d15
+	wait 2000
+ 	end repeat
+end script

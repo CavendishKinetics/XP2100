@@ -1,10 +1,8 @@
-script Usid2Burnin46V
-Generate u2Reg0x10d31
- repeat 1
+script Usid2Burnin10k41V
+ repeat 10000
   	generate u2Reg0x0d0
   	wait 2000
   	generate u2Reg0x0d15
 	wait 2000
  	end repeat
-Generate u2Reg0x10d26
 end script

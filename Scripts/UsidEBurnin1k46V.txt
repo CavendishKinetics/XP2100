@@ -1,4 +1,4 @@
-script UsidEBurnin46V
+script UsidEBurnin1k46V
 Generate uEReg0x10d31
  repeat 1000
   	generate uEReg0x0d0
