@@ -8,37 +8,37 @@
 	ProcessSetup	HSDIO - Write Waveforms for Bridge Initialization	ID#:E7PJ7hGNcEKKeqzYvietdC		No Tests											
 	ProcessSetup	HSDIO-Configure PFI Channels for Relay Control	ID#:KMlJExroRUanxgIuWsdrCB		No Tests											
 	ProcessSetup	HSDIO - Commit settings to hardware	ID#:P0E1M1XJ9kabhU+I1EfyYB		No Tests											
-	MainSequence	-------Test- Detect Valid USID's	ID#:5PJ/xP+BxUiaA2HS/+ZmZA	Valid_USID	1		0	1	GELE			Numeric Limit	4	Valid_USID		
+	MainSequence	TEST: Detect Valid USID's	ID#:5PJ/xP+BxUiaA2HS/+ZmZA	Valid_USID	1		0	1	GELE			Numeric Limit	4	Valid_USID		
 	MainSequence	Configure Measurement Path--Series and Shunt	ID#:UFUkMMis2UmyJwpTxZ0+AD		No Tests											
-	MainSequence	#NAME?	ID#:0SPdvJE0tEmag5u214OqKB	IVSU_LowPower_Initial	1	VSU	0	6	GELE		uA	Numeric Limit	14	IVSU_LowPower_Initial		
-	MainSequence	#NAME?	ID#:0SPdvJE0tEmag5u214OqKB	IVSU_State0x00_Initial	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x00_Initial		
-	MainSequence	#NAME?	ID#:B+nlgk7l90i0PHsU7Uq3cC	IVSU_State0x0F_Initial	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x0F_Initial		
-	MainSequence	#NAME?	ID#:B+nlgk7l90i0PHsU7Uq3cC	IVSU_State0xF0_Initial	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0xF0_Initial		
-	MainSequence	-------TEST: Set State 00: Rfree in Active Mode Neg Current Only	ID#:bcKwjlRxEkGSYVgItk0WLD	R_Free_Initial	1		85000	125000	GELE		Ohm	Numeric Limit	26	R_Free_Initial		
+	MainSequence	TEST: IVIO (IVSU) KGD	ID#:0SPdvJE0tEmag5u214OqKB	IVSU_LowPower_Initial	1	VSU	0	6	GELE		uA	Numeric Limit	14	IVSU_LowPower_Initial		
+	MainSequence	TEST: IVIO (IVSU) KGD	ID#:0SPdvJE0tEmag5u214OqKB	IVSU_State0x00_Initial	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x00_Initial		
+	MainSequence	TEST: Set State Measue IVSU (IVIO)	ID#:B+nlgk7l90i0PHsU7Uq3cC	IVSU_State0x0F_Initial	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x0F_Initial		
+	MainSequence	TEST: Set State Measue IVSU (IVIO)	ID#:B+nlgk7l90i0PHsU7Uq3cC	IVSU_State0xF0_Initial	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0xF0_Initial		
+	MainSequence	TEST: Set State 00: Rfree in Active Mode Neg Current Only	ID#:bcKwjlRxEkGSYVgItk0WLD	R_Free_Initial	1		85000	125000	GELE		Ohm	Numeric Limit	26	R_Free_Initial		
 	MainSequence	Run Engineering Mode Script	ID#:/90PwpscAUykNpjqbec6yD		No Tests											
-	MainSequence	 Readback: Die Variant Reg 0x0E (14 Dec)	ID#:EYd6wOhmR02DSXxl3dPmVD	Die_Version_0x0E	1				LOG			Numeric Limit		Die_Version_0x0E		FileGlobals.Die_Variant
+	MainSequence	TEST: Readback: Die Variant Reg 0x0E (14 Dec)	ID#:EYd6wOhmR02DSXxl3dPmVD	Die_Version_0x0E	1				LOG			Numeric Limit		Die_Version_0x0E		FileGlobals.Die_Variant
 	MainSequence	 Readback Multiple Registers--Read Fuse Registers	ID#:72YLUV14zEKXsh2SEDmRbD		No Tests											
-	MainSequence	#NAME?	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x06	1				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[0]	
-	MainSequence	#NAME?	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x07	2				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[1]	
-	MainSequence	#NAME?	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x08	3				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[2]	
-	MainSequence	#NAME?	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x09	4				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[3]	
-	MainSequence	#NAME?	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x0A	5				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[4]	
-	MainSequence	#NAME?	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State00_Initial	1		20000	200000	GELE		Ohm	Numeric Limit	26	State00		
-	MainSequence	#NAME?	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State01_Initial	2		0.4	2	GELE		Ohm	Numeric Limit	29	State01		Locals.R_Initial[1]
-	MainSequence	#NAME?	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State02_Initial	3		0.4	2	GELE		Ohm	Numeric Limit	29	State02		Locals.R_Initial[2]
-	MainSequence	#NAME?	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State04_Initial	4		0.4	2	GELE		Ohm	Numeric Limit	29	State04		Locals.R_Initial[3]
-	MainSequence	#NAME?	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State08_Initial	5		0.4	2	GELE		Ohm	Numeric Limit	29	State08		Locals.R_Initial[4]
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x06	1				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[0]	
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x07	2				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[1]	
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x08	3				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[2]	
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x09	4				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[3]	
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x0A	5				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[4]	
+	MainSequence	TEST: Set State Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State00_Initial	1		20000	200000	GELE		Ohm	Numeric Limit	26	State00		
+	MainSequence	TEST: Set State Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State01_Initial	2		0.4	2	GELE		Ohm	Numeric Limit	29	State01		Locals.R_Initial[1]
+	MainSequence	TEST: Set State Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State02_Initial	3		0.4	2	GELE		Ohm	Numeric Limit	29	State02		Locals.R_Initial[2]
+	MainSequence	TEST: Set State Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State04_Initial	4		0.4	2	GELE		Ohm	Numeric Limit	29	State04		Locals.R_Initial[3]
+	MainSequence	TEST: Set State Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	R_State08_Initial	5		0.4	2	GELE		Ohm	Numeric Limit	29	State08		Locals.R_Initial[4]
 	MainSequence	Burnin 1k46V	ID#:17Zg6STJ/kypxIHz0n+fLC		No Tests											
 	MainSequence	Burnin 10k41V	ID#:BNrJ+W/CrkCekFvNVOUdiA		No Tests											
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State00	1		20000	200000	GELE		Ohm	Numeric Limit	26	State00		
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State01	2		0.35	1	GELE		Ohm	Numeric Limit	29	State01		Locals.R_10K[1]
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State02	3		0.35	1	GELE		Ohm	Numeric Limit	29	State02		Locals.R_10K[2]
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State04	4		0.35	1	GELE		Ohm	Numeric Limit	29	State04		Locals.R_10K[3]
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State08	5		0.35	1	GELE		Ohm	Numeric Limit	29	State08		Locals.R_10K[4]
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	Rd_State01	6				LOG	m	Ohm	Numeric Limit			Locals.R_10K[1] - Locals.R_Initial[1]	
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	Rd_State02	7				LOG	m	Ohm	Numeric Limit			Locals.R_10K[2] - Locals.R_Initial[2]	
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	Rd_State04	8				LOG	m	Ohm	Numeric Limit			Locals.R_10K[3] - Locals.R_Initial[3]	
-	MainSequence	#NAME?	ID#:Dks7a79xAkOz6rUQKnnhZA	Rd_State08	9				LOG	m	Ohm	Numeric Limit			Locals.R_10K[4] - Locals.R_Initial[4]	
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State00	1		20000	200000	GELE		Ohm	Numeric Limit	26	State00		
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State01	2		0.35	1	GELE		Ohm	Numeric Limit	29	State01		Locals.R_10K[1]
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State02	3		0.35	1	GELE		Ohm	Numeric Limit	29	State02		Locals.R_10K[2]
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State04	4		0.35	1	GELE		Ohm	Numeric Limit	29	State04		Locals.R_10K[3]
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	R_10K46V_State08	5		0.35	1	GELE		Ohm	Numeric Limit	29	State08		Locals.R_10K[4]
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	Rd_State01	6				LOG	m	Ohm	Numeric Limit			Locals.R_10K[1] - Locals.R_Initial[1]	
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	Rd_State02	7				LOG	m	Ohm	Numeric Limit			Locals.R_10K[2] - Locals.R_Initial[2]	
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	Rd_State04	8				LOG	m	Ohm	Numeric Limit			Locals.R_10K[3] - Locals.R_Initial[3]	
+	MainSequence	TEST: Set State Measure Series Resistance_Post Burnin	ID#:Dks7a79xAkOz6rUQKnnhZA	Rd_State08	9				LOG	m	Ohm	Numeric Limit			Locals.R_10K[4] - Locals.R_Initial[4]	
 	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_15	1				LOG		Ohm	Numeric Limit		BF_PI_15		
 	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_16	2				LOG		Ohm	Numeric Limit		BF_PI_16		
 	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_17	3				LOG		Ohm	Numeric Limit		BF_PI_17		
@@ -101,22 +101,22 @@
 	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	DVR_RL	60				LOG			Numeric Limit			Locals.R_VRL1-Locals.R_VRL	
 	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	Rhyst	61				LOG			Numeric Limit			Locals.R_VPI - Locals.R_VRL	
 	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	Rsat	62				LOG			Numeric Limit			Locals.R41 - Locals.R39	
-	MainSequence	#NAME?	ID#:HgXAGZHnPUya20iticUYWC	R_Shunt01	1		10	30	GELE		Ohm	Numeric Limit	64	Shunt01		
-	MainSequence	#NAME?	ID#:HgXAGZHnPUya20iticUYWC	R_Shunt02	2		10	30	GELE		Ohm	Numeric Limit	64	Shunt02		
-	MainSequence	#NAME?	ID#:HgXAGZHnPUya20iticUYWC	R_Shunt04	3		10	30	GELE		Ohm	Numeric Limit	64	Shunt04		
-	MainSequence	#NAME?	ID#:HgXAGZHnPUya20iticUYWC	R_Shunt08	4		10	30	GELE		Ohm	Numeric Limit	64	Shunt08		
+	MainSequence	TEST: Set State Measure Shunt Resistance	ID#:HgXAGZHnPUya20iticUYWC	R_Shunt01	1		10	30	GELE		Ohm	Numeric Limit	64	Shunt01		
+	MainSequence	TEST: Set State Measure Shunt Resistance	ID#:HgXAGZHnPUya20iticUYWC	R_Shunt02	2		10	30	GELE		Ohm	Numeric Limit	64	Shunt02		
+	MainSequence	TEST: Set State Measure Shunt Resistance	ID#:HgXAGZHnPUya20iticUYWC	R_Shunt04	3		10	30	GELE		Ohm	Numeric Limit	64	Shunt04		
+	MainSequence	TEST: Set State Measure Shunt Resistance	ID#:HgXAGZHnPUya20iticUYWC	R_Shunt08	4		10	30	GELE		Ohm	Numeric Limit	64	Shunt08		
 	MainSequence	SMU - Configure SMU_Guardian/Pilot Measurment: Local Mode Only	ID#:65XXGEsvaEWfvS6N2cT54D		No Tests											
 	MainSequence	Configure Measurement Path--Guardian	ID#:2vlnYUyVj0uCfhIsuQ0SAD		No Tests											
-	MainSequence	#NAME?	ID#:zXmcxKQ1okynKE1j4bgUqB	GuardianPilot_On	1		1	10	GELE		Ohm	Numeric Limit	61	Pilot_On		
-	MainSequence	#NAME?	ID#:zXmcxKQ1okynKE1j4bgUqB	GuardianPilot_Off	2		20000	200000	GELE		Ohm	Numeric Limit	61	Pilot_Off		
+	MainSequence	TEST: Guardian On Off	ID#:zXmcxKQ1okynKE1j4bgUqB	GuardianPilot_On	1		1	10	GELE		Ohm	Numeric Limit	61	Pilot_On		
+	MainSequence	TEST: Guardian On Off	ID#:zXmcxKQ1okynKE1j4bgUqB	GuardianPilot_Off	2		20000	200000	GELE		Ohm	Numeric Limit	61	Pilot_Off		
 	MainSequence	Configure Measurement Path--Series and Shunt	ID#:s2Fwk6fObUKXCFGmVpBeGC		No Tests											
-	MainSequence	#NAME?	ID#:Rdu+kCyBd0OTkWAhPGq0oB	IVSU_State0x0F_Final	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x0F_Final		
-	MainSequence	#NAME?	ID#:Rdu+kCyBd0OTkWAhPGq0oB	IVSU_State0xF0_Final	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0xF0_Final		
-	MainSequence	-------TEST: Set State 00: Rfree in Active Mode Neg Current Only	ID#:DqjRWdFKJEK5qABTzukI3C	R_Free_Final	1		90000	120000	GELE		Ohm	Numeric Limit	26	R_Free_Final		
-	MainSequence	#NAME?	ID#:+BePO3P10UasPw73g2MfXC	IVSU_State0x00_Final	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x00_Final		
-	MainSequence	#NAME?	ID#:+BePO3P10UasPw73g2MfXC	IVSU_LowPower_Final	2	VSU	0	6	GELE		uA	Numeric Limit	14	IVSU_LowPower_Final		
+	MainSequence	TEST: Set State Measure IVSU (IVIO)	ID#:Rdu+kCyBd0OTkWAhPGq0oB	IVSU_State0x0F_Final	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x0F_Final		
+	MainSequence	TEST: Set State Measure IVSU (IVIO)	ID#:Rdu+kCyBd0OTkWAhPGq0oB	IVSU_State0xF0_Final	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0xF0_Final		
+	MainSequence	TEST:: Set State 00: Rfree in Active Mode Neg Current Only	ID#:DqjRWdFKJEK5qABTzukI3C	R_Free_Final	1		90000	120000	GELE		Ohm	Numeric Limit	26	R_Free_Final		
+	MainSequence	TEST: - IVIO (IVSU) KGD	ID#:+BePO3P10UasPw73g2MfXC	IVSU_State0x00_Final	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x00_Final		
+	MainSequence	TEST: - IVIO (IVSU) KGD	ID#:+BePO3P10UasPw73g2MfXC	IVSU_LowPower_Final	2	VSU	0	6	GELE		uA	Numeric Limit	14	IVSU_LowPower_Final		
 	MainSequence	Bridge Command_Turn off SuBUS A. Reg 0x06	ID#:GOD6nbD3ZUizvOEerjmzJA		No Tests											
-	MainSequence	#NAME?	ID#:ZXA6Aol+zkaFWSSIBKKbzD		No Tests											
+	MainSequence	Utility - Power off VSU only. This will turn off power to DUT and keep bridge initialized	ID#:ZXA6Aol+zkaFWSSIBKKbzD		No Tests											
 	ProcessCleanup	Close Sessions	ID#:HuqeV13gZEO1jLcQP6AV5A		No Tests											
 	Read_Scripts	HSDIO- Read Script from File_Write Bridge Initialization Script	ID#:eVCjFzMXW0qHqG35WoE1CB		No Tests											
 	Read_Scripts	HSDIO- Read Script from File_Write USID2 Burnin10k41V Script	ID#:/xkPIrlA6kG/OxiBwnwLHC		No Tests											
@@ -134,13 +134,13 @@
 	Scan USID_Contact Check	HSDIO- Set VIO Level- 1.8V	ID#:3uV0BvuZbke671CL6NTgmC		No Tests											
 	Scan USID_Contact Check	Bridge Command_Turn on SuBUS A. Reg 0x06	ID#:lwYgCv1TAECYuGEJFHJhlC		No Tests											
 	Scan USID_Contact Check	SMU - Configure VSU and VP  to 1.8V	ID#:i6WQSnP6eU2G5Y0k0OhrMC		No Tests											
-	Scan USID_Contact Check	Test- Scan USID's	ID#:ZLLYLWBeuE2ltqRxBnZsID	Num_Of_USID	1		2	3	GELE			Numeric Limit	4	Num_Of_USID		
-	Scan USID_Contact Check	Test- Scan USID's	ID#:ZLLYLWBeuE2ltqRxBnZsID	USID	2				LOG			Numeric Limit		USID		
+	Scan USID_Contact Check	TEST: Scan USID's	ID#:ZLLYLWBeuE2ltqRxBnZsID	Num_Of_USID	1		2	3	GELE			Numeric Limit	4	Num_Of_USID		
+	Scan USID_Contact Check	TEST: Scan USID's	ID#:ZLLYLWBeuE2ltqRxBnZsID	USID	2				LOG			Numeric Limit		USID		
 	Power Up and Set Active Mode	HSDIO- Set VIO Level- 1.8V	ID#:/PYHr3DRXkyWZkzcRmHMiD		No Tests											
-	Power Up and Set Active Mode	----------Utility - Power on VSU and Measure VSU(VIO)_No Log	ID#:G4/cBAl3ikegNdLZAf0DYA		No Tests											
+	Power Up and Set Active Mode	Utility - Power on VSU and Measure VSU(VIO)_No Log	ID#:G4/cBAl3ikegNdLZAf0DYA		No Tests											
 	Power Up and Set Active Mode	Reg Write to Reg: 0X1C(Dec 28)-  Active Mode	ID#:pOF3K+3XxU+EZsNECTD04C		No Tests											
 	Debug_Tools	 Readback: for debugging	ID#:Yt3xQ3iK0EKS7xgEMojsZA		No Tests											
 	Debug_Tools	 Readback Multiple Registers--Read Fuse Registers: Debugging	ID#:SWSOAR4L+kW9IfxUys+HnC		No Tests											
 	Debug_Tools	VSU and VP Output On	ID#:xsJxVAPC4UGazhlVKYpB0B		No Tests											
-	Debug_Tools	#NAME?	ID#:+T1JGIsBv0CKfzYp3xQV9B	PreFuse_VSU	110	VSU			LOG			Numeric Limit		PreFuse_VSU		
+	Debug_Tools	TEST: Meas PreFuse VSU	ID#:+T1JGIsBv0CKfzYp3xQV9B	PreFuse_VSU	110	VSU			LOG			Numeric Limit		PreFuse_VSU		
 </SemiconductorModuleTests>																
