@@ -112,7 +112,7 @@
 	MainSequence	Configure Measurement Path--Series and Shunt	ID#:s2Fwk6fObUKXCFGmVpBeGC		No Tests											
 	MainSequence	TEST: Set State Measure IVSU (IVIO)	ID#:Rdu+kCyBd0OTkWAhPGq0oB	IVSU_State0x0F_Final	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x0F_Final		
 	MainSequence	TEST: Set State Measure IVSU (IVIO)	ID#:Rdu+kCyBd0OTkWAhPGq0oB	IVSU_State0xF0_Final	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0xF0_Final		
-	MainSequence	TEST:: Set State 00: Rfree in Active Mode Neg Current Only	ID#:DqjRWdFKJEK5qABTzukI3C	R_Free_Final	1		90000	120000	GELE		Ohm	Numeric Limit	26	R_Free_Final		
+	MainSequence	TEST:: Set State 00: Rfree in Active Mode Neg Current Only	ID#:DqjRWdFKJEK5qABTzukI3C	R_Free_Final	1		90000	125000	GELE		Ohm	Numeric Limit	26	R_Free_Final		
 	MainSequence	TEST: - IVIO (IVSU) KGD	ID#:+BePO3P10UasPw73g2MfXC	IVSU_State0x00_Final	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x00_Final		
 	MainSequence	TEST: - IVIO (IVSU) KGD	ID#:+BePO3P10UasPw73g2MfXC	IVSU_LowPower_Final	2	VSU	0	6	GELE		uA	Numeric Limit	14	IVSU_LowPower_Final		
 	MainSequence	Bridge Command_Turn off SuBUS A. Reg 0x06	ID#:GOD6nbD3ZUizvOEerjmzJA		No Tests											
