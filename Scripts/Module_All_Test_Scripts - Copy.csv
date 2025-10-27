@@ -54,9 +54,9 @@ SP3T,Start,Reg_Write,0,0,Set State 00
 ,End,Delay,1,1,
 SH3T,Start,Reg_Write,0,0,Set State 00
 ,,Measure,1,1,
-,,Reg_Write,0,3,Set State 03
+,,Reg_Write,0,1,Set State 01
 ,,Measure,1,2,
-,,Reg_Write,0,6,Set State 04
+,,Reg_Write,0,4,Set State 04
 ,,Measure,5,3,
 ,,Reg_Write,0,0,Set State 00
 ,End,Delay,1,1,mSec
@@ -70,9 +70,11 @@ SHUNT_SP4T,Start,Reg_Write,0,16,Shunt1
 ,,Measure,1,4,
 ,,Reg_Write,0,0,Set State 00
 ,End,Delay,1,1,
-SHUNT_SH3T,Start,Measure,1,1,
+SHUNT_SH3T,Start,Reg_Write,0,128,Shunt1(RF4 resource)
+,,Measure,1,1,
+,,Reg_Write,0,64,Shunt3(RF3 Resource)
 ,,Measure,1,2,
-,,Reg_Write,2,0,Guardian Off
+,,Reg_Write,0,0,
 ,End,Delay,1,1,mSec
 GUARDIAN,Start,Reg_Write,2,32,Guardian On
 ,,Measure,5,1,
@@ -215,9 +217,8 @@ Initial_States,Start,Reg_Write,0,15,
 ,End,Delay,1,1,
 GUARDIAN_ON,Start,Reg_Write,2,32,Guardian On
 ,,Measure,5,1,
+,,Reg_Write,2,0,Guardian Off
 ,End,Delay,1,1,mSec
 GUARDIAN_OFF,Start,Reg_Write,2,0,Guardian Off
-,End,Delay,1,1,mSec
-SH3T_RF2,Start,Reg_Write,0,2,State02
 ,,Measure,5,1,
 ,End,Delay,1,1,mSec
