@@ -1,234 +1,227 @@
-Test Name,Script Actions,Function,REG(0x00),DATA(DEC),Notes
-EngMode,Start,Reg_Write,1F,81,Q
-,,Reg_Write,1F,82,R
-,,Reg_Write,1F,86,V
-,End,Reg_Write,1F,79,O
-IVIOKGD,Start,Reg_Write,1C,128,Low Power Mode
-,,Delay,1,1,mSec
-,End,Reg_Write,1C,56,Active Mode
-REVERSEIVIOKGD,Start,Reg_Write,1C,56,Active Mode
-,,Delay,1,1,mSec
-,End,Reg_Write,1C,128,Low Power Mode
-RFREE_LP,Start,Reg_Write,0,0,Set State 00
-,,Reg_Write,1C,128,Low Power Mode
-,,Measure,1,1,
-,,Reg_Write,1C,56,Active Mode
-,End,Delay,1,1,mSec
-RFREE_ACTIVE,Start,Reg_Write,0,0,Set State 00
-,,Reg_Write,1C,56,Active Mode
-,,Measure,1,1,
-,End,Delay,1,1,mSec
-SP4T,Start,Reg_Write,0,0,Set State 00
-,,Measure,1,1,
-,,Reg_Write,0,1,Set State 01
-,,Measure,5,2,
-,,Reg_Write,0,2,Set State 02
-,,Measure,5,3,
-,,Reg_Write,0,4,Set State 04
-,,Measure,5,4,
-,,Reg_Write,0,8,Set State 08
-,,Measure,5,5,
-,,Reg_Write,0,0,Set State 00
-,End,Delay,1,1,
-SH4T,Start,Reg_Write,0,0,Set State 00
-,,Measure,1,1,
-,,Reg_Write,0,1,Set State 01
-,,Measure,5,2,
-,,Reg_Write,0,2,Set State 02
-,,Measure,5,3,
-,,Reg_Write,0,4,Set State 04
-,,Measure,5,4,
-,,Reg_Write,0,8,Set State 08
-,,Measure,5,5,
-,,Reg_Write,0,0,Set State 00
-,End,Delay,1,1,
-SP3T,Start,Reg_Write,0,0,Set State 00
-,,Measure,1,1,
-,,Reg_Write,0,1,Set State 01
-,,Measure,5,2,
-,,Reg_Write,0,2,Set State 02
-,,Measure,5,3,
-,,Reg_Write,0,4,Set State 04
-,,Measure,5,4,
-,,Reg_Write,0,0,Set State 00
-,End,Delay,1,1,
-SH3T,Start,Reg_Write,0,0,Set State 00
-,,Measure,1,1,
-,,Reg_Write,0,3,Set State 03
-,,Measure,1,2,
-,,Reg_Write,0,6,Set State 04
-,,Measure,5,3,
-,,Reg_Write,0,0,Set State 00
-,End,Delay,1,1,mSec
-SHUNT_SP4T,Start,Reg_Write,0,16,Shunt1
-,,Measure,1,1,
-,,Reg_Write,0,32,Shunt3
-,,Measure,1,2,
-,,Reg_Write,0,64,Shunt3
-,,Measure,1,3,
-,,Reg_Write,0,128,Shunt4
-,,Measure,1,4,
-,,Reg_Write,0,0,Set State 00
-,End,Delay,1,1,
-SHUNT_SH3T,Start,Measure,1,1,
-,,Measure,1,2,
-,,Reg_Write,2,0,Guardian Off
-,End,Delay,1,1,mSec
-GUARDIAN,Start,Reg_Write,2,32,Guardian On
-,,Measure,5,1,
-,,Reg_Write,2,0,Guardian Off
-,,Measure,5,2,
-,End,Delay,1,1,mSec
-LOWCURRENT,Start,Reg_Write,1C,56,Active Mode
-,End,Delay,1,1,
-Butterfly,Start,Reg_Write,0,15,State_15
-,,Reg_Write,10,0,HVHST_0
-,,Measure,1,1,Published Data Iteration(from Data Column)
-,,Reg_Write,10,1,HVHST_1
-,,Measure,1,2,Published Data Iteration(from Data Column)
-,,Reg_Write,10,2,HVHST_2
-,,Measure,1,3,Published Data Iteration(from Data Column)
-,,Reg_Write,10,3,HVHST_3
-,,Measure,1,4,Published Data Iteration(from Data Column)
-,,Reg_Write,10,4,HVHST_4
-,,Measure,1,5,Published Data Iteration(from Data Column)
-,,Reg_Write,10,5,HVHST_5
-,,Measure,1,6,Published Data Iteration(from Data Column)
-,,Reg_Write,10,6,HVHST_6
-,,Measure,1,7,Published Data Iteration(from Data Column)
-,,Reg_Write,10,7,HVHST_7
-,,Measure,1,8,Published Data Iteration(from Data Column)
-,,Reg_Write,10,8,HVHST_8
-,,Measure,1,9,Published Data Iteration(from Data Column)
-,,Reg_Write,10,9,HVHST_9
-,,Measure,1,10,Published Data Iteration(from Data Column)
-,,Reg_Write,10,10,HVHST_10
-,,Measure,1,11,Published Data Iteration(from Data Column)
-,,Reg_Write,10,11,HVHST_11
-,,Measure,1,12,Published Data Iteration(from Data Column)
-,,Reg_Write,10,12,HVHST_12
-,,Measure,1,13,Published Data Iteration(from Data Column)
-,,Reg_Write,10,13,HVHST_13
-,,Measure,1,14,Published Data Iteration(from Data Column)
-,,Reg_Write,10,14,HVHST_14
-,,Measure,1,15,Published Data Iteration(from Data Column)
-,,Reg_Write,10,15,HVHST_15
-,,Measure,1,16,Published Data Iteration(from Data Column)
-,,Reg_Write,10,16,HVHST_16
-,,Measure,1,17,Published Data Iteration(from Data Column)
-,,Reg_Write,10,17,HVHST_17
-,,Measure,1,18,Published Data Iteration(from Data Column)
-,,Reg_Write,10,18,HVHST_18
-,,Measure,1,19,Published Data Iteration(from Data Column)
-,,Reg_Write,10,19,HVHST_19
-,,Measure,1,20,Published Data Iteration(from Data Column)
-,,Reg_Write,10,20,HVHST_20
-,,Measure,1,21,Published Data Iteration(from Data Column)
-,,Reg_Write,10,21,HVHST_21
-,,Measure,1,22,Published Data Iteration(from Data Column)
-,,Reg_Write,10,22,HVHST_22
-,,Measure,1,23,Published Data Iteration(from Data Column)
-,,Reg_Write,10,23,HVHST_23
-,,Measure,1,24,Published Data Iteration(from Data Column)
-,,Reg_Write,10,24,HVHST_24
-,,Measure,1,25,Published Data Iteration(from Data Column)
-,,Reg_Write,10,25,HVHST_25
-,,Measure,1,26,Published Data Iteration(from Data Column)
-,,Reg_Write,10,26,HVHST_26
-,,Measure,1,27,Published Data Iteration(from Data Column)
-,,Reg_Write,10,26,HVHST_26
-,,Measure,1,28,Published Data Iteration(from Data Column)
-,,Reg_Write,10,25,HVHST_25
-,,Measure,1,29,Published Data Iteration(from Data Column)
-,,Reg_Write,10,24,HVHST_24
-,,Measure,1,30,Published Data Iteration(from Data Column)
-,,Reg_Write,10,23,HVHST_23
-,,Measure,1,31,Published Data Iteration(from Data Column)
-,,Reg_Write,10,22,HVHST_22
-,,Measure,1,32,Published Data Iteration(from Data Column)
-,,Reg_Write,10,21,HVHST_21
-,,Measure,1,33,Published Data Iteration(from Data Column)
-,,Reg_Write,10,20,HVHST_20
-,,Measure,1,34,Published Data Iteration(from Data Column)
-,,Reg_Write,10,19,HVHST_19
-,,Measure,1,35,Published Data Iteration(from Data Column)
-,,Reg_Write,10,18,HVHST_18
-,,Measure,1,36,Published Data Iteration(from Data Column)
-,,Reg_Write,10,17,HVHST_17
-,,Measure,1,37,Published Data Iteration(from Data Column)
-,,Reg_Write,10,16,HVHST_16
-,,Measure,1,38,Published Data Iteration(from Data Column)
-,,Reg_Write,10,15,HVHST_15
-,,Measure,1,39,Published Data Iteration(from Data Column)
-,,Reg_Write,10,14,HVHST_14
-,,Measure,1,40,Published Data Iteration(from Data Column)
-,,Reg_Write,10,13,HVHST_13
-,,Measure,1,41,Published Data Iteration(from Data Column)
-,,Reg_Write,10,12,HVHST_12
-,,Measure,1,42,Published Data Iteration(from Data Column)
-,,Reg_Write,10,11,HVHST_11
-,,Measure,1,43,Published Data Iteration(from Data Column)
-,,Reg_Write,10,10,HVHST_10
-,,Measure,1,44,Published Data Iteration(from Data Column)
-,,Reg_Write,10,9,HVHST_9
-,,Measure,1,45,Published Data Iteration(from Data Column)
-,,Reg_Write,10,8,HVHST_8
-,,Measure,1,46,Published Data Iteration(from Data Column)
-,,Reg_Write,10,7,HVHST_7
-,,Measure,1,47,Published Data Iteration(from Data Column)
-,,Reg_Write,10,6,HVHST_6
-,,Measure,1,48,Published Data Iteration(from Data Column)
-,,Reg_Write,10,5,HVHST_5
-,,Measure,1,49,Published Data Iteration(from Data Column)
-,,Reg_Write,10,4,HVHST_4
-,,Measure,1,50,Published Data Iteration(from Data Column)
-,,Reg_Write,10,3,HVHST_3
-,,Measure,1,51,Published Data Iteration(from Data Column)
-,,Reg_Write,10,2,HVHST_2
-,,Measure,1,52,Published Data Iteration(from Data Column)
-,,Reg_Write,10,1,HVHST_1
-,,Measure,1,53,Published Data Iteration(from Data Column)
-,,Reg_Write,10,0,HVHST_0
-,,Measure,1,54,
-,,Reg_Write,10,26,HVHST_26(Restore Default)
-,,Reg_Write,0,0,State_00
-,End,Delay,1,1,mSec
-WalkingState,Start,Reg_Write,0,0,Set State 00
-,,Delay,5,1,
-,,Reg_Write,0,1,Set State 01
-,,Delay,5,1,
-,,Reg_Write,0,2,Set State 02
-,,Delay,5,1,
-,,Reg_Write,0,4,Set State 04
-,,Delay,5,1,
-,,Reg_Write,0,8,Set State 08
-,,Delay,5,1,
-,,Reg_Write,0,15,Set State 15
-,,Delay,5,1,
-,,Reg_Write,0,0,Set State 00
-,End,Delay,1,1,
-Initial_States,Start,Reg_Write,0,15,
-,,Delay,1,1,
-,,Reg_Write,0,240,
-,,Delay,1,1,
-,,Reg_Write,0,0,
-,End,Delay,1,1,
-GUARDIAN_ON,Start,Reg_Write,2,32,Guardian On
-,,Measure,5,1,
-,End,Delay,1,1,mSec
-GUARDIAN_OFF,Start,Reg_Write,2,0,Guardian Off
-,End,Delay,1,1,mSec
-SH3T_RF2,Start,Reg_Write,0,2,State02
-,,Measure,5,1,
-,End,Delay,1,1,mSec
-SH3T_RF2_Rfree,Start,Reg_Write,0,0,Set State 00
-,,Measure,5,1,
-,End,Delay,1,1,mSec
-SH3T_Rfree,Start,Reg_Write,0,0,Set State 00
-,,Measure,1,1,
-,,Reg_Write,0,0,Set State 00
-,,Measure,1,2,
-,,Reg_Write,0,0,Set State 00
-,,Measure,5,3,
-,,Reg_Write,0,0,Set State 00
-,End,Delay,1,1,mSec
+Test Name,Script Actions,Function,REG(0x00),DATA(DEC),Notes,
+EngMode,Start,Reg_Write,1F,81,Q,
+,,Reg_Write,1F,82,R,
+,,Reg_Write,1F,86,V,
+,End,Reg_Write,1F,79,O,
+IVIOKGD,Start,Reg_Write,1C,128,Low Power Mode,
+,,Delay,1,1,mSec,
+,End,Reg_Write,1C,56,Active Mode,
+REVERSEIVIOKGD,Start,Reg_Write,1C,56,Active Mode,
+,,Delay,1,1,mSec,
+,End,Reg_Write,1C,128,Low Power Mode,
+RFREE_LP,Start,Reg_Write,0,0,Set State 00,
+,,Reg_Write,1C,128,Low Power Mode,
+,,Measure,1,1,,
+,,Reg_Write,1C,56,Active Mode,
+,End,Delay,1,1,mSec,
+RFREE_ACTIVE,Start,Reg_Write,0,0,Set State 00,
+,,Reg_Write,1C,56,Active Mode,
+,,Measure,1,1,,
+,End,Delay,1,1,mSec,
+SP4T,Start,Reg_Write,0,0,Set State 00,
+,,Measure,1,1,,
+,,Reg_Write,0,1,Set State 01,
+,,Measure,5,2,,
+,,Reg_Write,0,2,Set State 02,
+,,Measure,5,3,,
+,,Reg_Write,0,4,Set State 04,
+,,Measure,5,4,,
+,,Reg_Write,0,8,Set State 08,
+,,Measure,5,5,,
+,,Reg_Write,0,0,Set State 00,
+,End,Delay,1,1,,
+SH4T,Start,Reg_Write,0,0,Set State 00,
+,,Measure,1,1,,
+,,Reg_Write,0,1,Set State 01,
+,,Measure,5,2,,
+,,Reg_Write,0,2,Set State 02,
+,,Measure,5,3,,
+,,Reg_Write,0,4,Set State 04,
+,,Measure,5,4,,
+,,Reg_Write,0,8,Set State 08,
+,,Measure,5,5,,
+,,Reg_Write,0,0,Set State 00,
+,End,Delay,1,1,,
+SP3T,Start,Reg_Write,0,1,Set State 01,
+,,Measure,5,1,,
+,,Reg_Write,0,2,Set State 02,
+,,Measure,5,2,,
+,,Reg_Write,0,4,Set State 04,
+,,Measure,5,3,,
+,,Reg_Write,0,0,Set State 00,
+,End,Delay,1,1,,
+SH3T,Start,Reg_Write,0,3,Set State 03,closing SW2 during measurment to improve ground to DUT
+,,Measure,1,1,,
+,,Reg_Write,0,6,Set State 06,closing SW2 during measurment to improve ground to DUT
+,,Measure,5,2,,
+,,Reg_Write,0,0,Set State 00,
+,End,Delay,1,1,mSec,
+SHUNT_SP4T,Start,Reg_Write,0,16,Shunt1,
+,,Measure,1,1,,
+,,Reg_Write,0,32,Shunt3,
+,,Measure,1,2,,
+,,Reg_Write,0,64,Shunt3,
+,,Measure,1,3,,
+,,Reg_Write,0,128,Shunt4,
+,,Measure,1,4,,
+,,Reg_Write,0,0,Set State 00,
+,End,Delay,1,1,,
+SHUNT_SH3T,Start,Measure,1,1,,
+,,Measure,1,2,,
+,,Reg_Write,2,0,Guardian Off,
+,End,Delay,1,1,mSec,
+GUARDIAN,Start,Reg_Write,2,32,Guardian On,
+,,Measure,5,1,,
+,,Reg_Write,2,0,Guardian Off,
+,,Measure,5,2,,
+,End,Delay,1,1,mSec,
+LOWCURRENT,Start,Reg_Write,1C,56,Active Mode,
+,End,Delay,1,1,,
+Butterfly,Start,Reg_Write,0,15,State_15,
+,,Reg_Write,10,0,HVHST_0,
+,,Measure,1,1,Published Data Iteration(from Data Column),
+,,Reg_Write,10,1,HVHST_1,
+,,Measure,1,2,Published Data Iteration(from Data Column),
+,,Reg_Write,10,2,HVHST_2,
+,,Measure,1,3,Published Data Iteration(from Data Column),
+,,Reg_Write,10,3,HVHST_3,
+,,Measure,1,4,Published Data Iteration(from Data Column),
+,,Reg_Write,10,4,HVHST_4,
+,,Measure,1,5,Published Data Iteration(from Data Column),
+,,Reg_Write,10,5,HVHST_5,
+,,Measure,1,6,Published Data Iteration(from Data Column),
+,,Reg_Write,10,6,HVHST_6,
+,,Measure,1,7,Published Data Iteration(from Data Column),
+,,Reg_Write,10,7,HVHST_7,
+,,Measure,1,8,Published Data Iteration(from Data Column),
+,,Reg_Write,10,8,HVHST_8,
+,,Measure,1,9,Published Data Iteration(from Data Column),
+,,Reg_Write,10,9,HVHST_9,
+,,Measure,1,10,Published Data Iteration(from Data Column),
+,,Reg_Write,10,10,HVHST_10,
+,,Measure,1,11,Published Data Iteration(from Data Column),
+,,Reg_Write,10,11,HVHST_11,
+,,Measure,1,12,Published Data Iteration(from Data Column),
+,,Reg_Write,10,12,HVHST_12,
+,,Measure,1,13,Published Data Iteration(from Data Column),
+,,Reg_Write,10,13,HVHST_13,
+,,Measure,1,14,Published Data Iteration(from Data Column),
+,,Reg_Write,10,14,HVHST_14,
+,,Measure,1,15,Published Data Iteration(from Data Column),
+,,Reg_Write,10,15,HVHST_15,
+,,Measure,1,16,Published Data Iteration(from Data Column),
+,,Reg_Write,10,16,HVHST_16,
+,,Measure,1,17,Published Data Iteration(from Data Column),
+,,Reg_Write,10,17,HVHST_17,
+,,Measure,1,18,Published Data Iteration(from Data Column),
+,,Reg_Write,10,18,HVHST_18,
+,,Measure,1,19,Published Data Iteration(from Data Column),
+,,Reg_Write,10,19,HVHST_19,
+,,Measure,1,20,Published Data Iteration(from Data Column),
+,,Reg_Write,10,20,HVHST_20,
+,,Measure,1,21,Published Data Iteration(from Data Column),
+,,Reg_Write,10,21,HVHST_21,
+,,Measure,1,22,Published Data Iteration(from Data Column),
+,,Reg_Write,10,22,HVHST_22,
+,,Measure,1,23,Published Data Iteration(from Data Column),
+,,Reg_Write,10,23,HVHST_23,
+,,Measure,1,24,Published Data Iteration(from Data Column),
+,,Reg_Write,10,24,HVHST_24,
+,,Measure,1,25,Published Data Iteration(from Data Column),
+,,Reg_Write,10,25,HVHST_25,
+,,Measure,1,26,Published Data Iteration(from Data Column),
+,,Reg_Write,10,26,HVHST_26,
+,,Measure,1,27,Published Data Iteration(from Data Column),
+,,Reg_Write,10,26,HVHST_26,
+,,Measure,1,28,Published Data Iteration(from Data Column),
+,,Reg_Write,10,25,HVHST_25,
+,,Measure,1,29,Published Data Iteration(from Data Column),
+,,Reg_Write,10,24,HVHST_24,
+,,Measure,1,30,Published Data Iteration(from Data Column),
+,,Reg_Write,10,23,HVHST_23,
+,,Measure,1,31,Published Data Iteration(from Data Column),
+,,Reg_Write,10,22,HVHST_22,
+,,Measure,1,32,Published Data Iteration(from Data Column),
+,,Reg_Write,10,21,HVHST_21,
+,,Measure,1,33,Published Data Iteration(from Data Column),
+,,Reg_Write,10,20,HVHST_20,
+,,Measure,1,34,Published Data Iteration(from Data Column),
+,,Reg_Write,10,19,HVHST_19,
+,,Measure,1,35,Published Data Iteration(from Data Column),
+,,Reg_Write,10,18,HVHST_18,
+,,Measure,1,36,Published Data Iteration(from Data Column),
+,,Reg_Write,10,17,HVHST_17,
+,,Measure,1,37,Published Data Iteration(from Data Column),
+,,Reg_Write,10,16,HVHST_16,
+,,Measure,1,38,Published Data Iteration(from Data Column),
+,,Reg_Write,10,15,HVHST_15,
+,,Measure,1,39,Published Data Iteration(from Data Column),
+,,Reg_Write,10,14,HVHST_14,
+,,Measure,1,40,Published Data Iteration(from Data Column),
+,,Reg_Write,10,13,HVHST_13,
+,,Measure,1,41,Published Data Iteration(from Data Column),
+,,Reg_Write,10,12,HVHST_12,
+,,Measure,1,42,Published Data Iteration(from Data Column),
+,,Reg_Write,10,11,HVHST_11,
+,,Measure,1,43,Published Data Iteration(from Data Column),
+,,Reg_Write,10,10,HVHST_10,
+,,Measure,1,44,Published Data Iteration(from Data Column),
+,,Reg_Write,10,9,HVHST_9,
+,,Measure,1,45,Published Data Iteration(from Data Column),
+,,Reg_Write,10,8,HVHST_8,
+,,Measure,1,46,Published Data Iteration(from Data Column),
+,,Reg_Write,10,7,HVHST_7,
+,,Measure,1,47,Published Data Iteration(from Data Column),
+,,Reg_Write,10,6,HVHST_6,
+,,Measure,1,48,Published Data Iteration(from Data Column),
+,,Reg_Write,10,5,HVHST_5,
+,,Measure,1,49,Published Data Iteration(from Data Column),
+,,Reg_Write,10,4,HVHST_4,
+,,Measure,1,50,Published Data Iteration(from Data Column),
+,,Reg_Write,10,3,HVHST_3,
+,,Measure,1,51,Published Data Iteration(from Data Column),
+,,Reg_Write,10,2,HVHST_2,
+,,Measure,1,52,Published Data Iteration(from Data Column),
+,,Reg_Write,10,1,HVHST_1,
+,,Measure,1,53,Published Data Iteration(from Data Column),
+,,Reg_Write,10,0,HVHST_0,
+,,Measure,1,54,,
+,,Reg_Write,10,26,HVHST_26(Restore Default),
+,,Reg_Write,0,0,State_00,
+,End,Delay,1,1,mSec,
+WalkingState,Start,Reg_Write,0,0,Set State 00,
+,,Delay,5,1,,
+,,Reg_Write,0,1,Set State 01,
+,,Delay,5,1,,
+,,Reg_Write,0,2,Set State 02,
+,,Delay,5,1,,
+,,Reg_Write,0,4,Set State 04,
+,,Delay,5,1,,
+,,Reg_Write,0,8,Set State 08,
+,,Delay,5,1,,
+,,Reg_Write,0,15,Set State 15,
+,,Delay,5,1,,
+,,Reg_Write,0,0,Set State 00,
+,End,Delay,1,1,,
+Initial_States,Start,Reg_Write,0,15,,
+,,Delay,1,1,,
+,,Reg_Write,0,240,,
+,,Delay,1,1,,
+,,Reg_Write,0,0,,
+,End,Delay,1,1,,
+GUARDIAN_ON,Start,Reg_Write,2,32,Guardian On,
+,,Measure,5,1,,
+,End,Delay,1,1,mSec,
+GUARDIAN_OFF,Start,Reg_Write,2,0,Guardian Off,
+,End,Delay,1,1,mSec,
+SH3T_RF2,Start,Reg_Write,0,2,State02,
+,,Measure,5,1,,
+,,Reg_Write,0,0,State00,
+,End,Delay,1,1,mSec,
+SH3T_RF2_Rfree,Start,Reg_Write,0,0,Set State 00,
+,,Measure,5,1,,
+,End,Delay,1,1,mSec,
+SH3T_Rfree,Start,Reg_Write,0,2,Set State 02,We want RF2 closed durint Rfree meas to improve Dut grounding
+,,Measure,1,1,,
+,,Reg_Write,0,0,Set State 00,
+,End,Delay,1,1,mSec,
