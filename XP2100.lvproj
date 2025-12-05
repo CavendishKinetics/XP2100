@@ -659,7 +659,6 @@
 				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 			</Item>
-			<Item Name="Configure HSDIO_SuBUS.vi" Type="VI" URL="../../Dallas_Characterization_Playground/SuBus/Manual SuBUS/support/Instruments/HSDIO/Configure HSDIO_SuBUS.vi"/>
 			<Item Name="Insert SET ID Signal.vi" Type="VI" URL="../Instruments/HSDIO/Insert SET ID Signal.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="nidcpower_32.dll" Type="Document" URL="nidcpower_32.dll">
