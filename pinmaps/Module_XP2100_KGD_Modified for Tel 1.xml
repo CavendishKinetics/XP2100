@@ -16,8 +16,8 @@
 	
 	<Instruments>
 		<NIHSDIOInstrument name="6556_0" numberOfChannels="24" PFILines="24,25"/>
-		<NIDCPowerInstrument name="4145_0" numberOfChannels="4"/>
-		<NIDCPowerInstrument name="4145_1" numberOfChannels="3"/>
+		<NIDCPowerInstrument name="4145_0" numberOfChannels="3"/>
+		<NIDCPowerInstrument name="4145_1" numberOfChannels="4"/>
 	</Instruments>
 	
 	<Sites>
@@ -28,13 +28,13 @@
 		<!-- Site 0 -->
 		<Connection pin="CLK" siteNumber="0" instrument="6556_0" channel="4"/>
 		<Connection pin="SDA" siteNumber="0" instrument="6556_0" channel="6"/>
-		<Connection pin="VIO_Bridge" siteNumber="0" instrument="4145_1" channel="0"/>
-		<Connection pin="VSU" siteNumber="0" instrument="4145_1" channel="1"/>
-		<Connection pin="RFC" siteNumber="0" instrument="4145_1" channel="2"/>
-		<Connection pin="RF1" siteNumber="0" instrument="4145_0" channel="0"/>
-		<Connection pin="RF2" siteNumber="0" instrument="4145_0" channel="1"/>
-		<Connection pin="RF3" siteNumber="0" instrument="4145_0" channel="2"/>
-		<Connection pin="RF4" siteNumber="0" instrument="4145_0" channel="3"/>
+		<Connection pin="VIO_Bridge" siteNumber="0" instrument="4145_0" channel="0"/>
+		<Connection pin="VSU" siteNumber="0" instrument="4145_0" channel="1"/>
+		<Connection pin="RFC" siteNumber="0" instrument="4145_0" channel="2"/>
+		<Connection pin="RF1" siteNumber="0" instrument="4145_1" channel="0"/>
+		<Connection pin="RF2" siteNumber="0" instrument="4145_1" channel="1"/>
+		<Connection pin="RF3" siteNumber="0" instrument="4145_1" channel="2"/>
+		<Connection pin="RF4" siteNumber="0" instrument="4145_1" channel="3"/>
 		<Connection pin="SW1" siteNumber="0" instrument="6556_0" channel="PFI24"/>
 		<Connection pin="SW2" siteNumber="0" instrument="6556_0" channel="PFI25"/>
 	</Connections>
