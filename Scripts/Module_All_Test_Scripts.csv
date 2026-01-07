@@ -56,7 +56,7 @@ SH3T,Start,Reg_Write,0,1,Set State 01
 ,End,Delay,1,1,mSec
 SHUNT_SP4T,Start,Reg_Write,0,16,Shunt1
 ,,Measure,1,1,
-,,Reg_Write,0,32,Shunt3
+,,Reg_Write,0,32,Shunt2
 ,,Measure,1,2,
 ,,Reg_Write,0,64,Shunt3
 ,,Measure,1,3,
