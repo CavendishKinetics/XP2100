@@ -1,0 +1,152 @@
+<SemiconductorModuleTests>
+	<SequenceName>	<StepName>	<StepId>	<TestName>	<TestNumber>	<Pin>	<LowLimitExpression>	<HighLimitExpression>	<ComparisonType>	<ScalingFactor>	<Units>	<EvaluationType>	<FailBin>	<PublishedDataId>	<TestDataSource>	<ExportLocation>	
+	ProcessSetup	Add Sessions to Pin Map_Module Screen	ID#:Ud2F11bYFkCTr+IH2FH0tD		No Tests												
+	ProcessSetup	SMU - Configure VIO_Bridge, VSU	ID#:appbPX/u0kiBPemG6wlmQD		No Tests												
+	ProcessSetup	SMU - Configure SMU_Throw Measurment	ID#:sCuvBptzTkmyWWHylBD/nB		No Tests												
+	ProcessSetup	SMU - Configure SMU_Guardian/Pilot Measurment	ID#:M2V1gK774kCW5MGQDOt0PA		No Tests												
+	ProcessSetup	HSDIO - Configure for Waveform Generation	ID#:sWexDje2xUK5qQeasLfdUB		No Tests												
+	ProcessSetup	HSDIO - Write Waveforms for Bridge Initialization	ID#:E7PJ7hGNcEKKeqzYvietdC		No Tests												
+	ProcessSetup	HSDIO-Configure PFI Channels for Relay Control	ID#:KMlJExroRUanxgIuWsdrCB		No Tests												
+	ProcessSetup	HSDIO - Commit settings to hardware	ID#:P0E1M1XJ9kabhU+I1EfyYB		No Tests												
+	MainSequence	TEST: Detect Valid USID's: Force Failure regardless of Continue on fail	ID#:23ZCUh6gX0Sd0/fb70d9VC	Valid_USID	1				LOG			Pass/Fail	4	Valid_USID			
+	MainSequence	TEST: IVIO (IVSU) KGD	ID#:0SPdvJE0tEmag5u214OqKB	IVSU_LowPower_Initial	1	VSU	0	6	GELE		uA	Numeric Limit	14	IVSU_LowPower_Initial			
+	MainSequence	TEST: IVIO (IVSU) KGD	ID#:0SPdvJE0tEmag5u214OqKB	IVSU_State0x00_Initial	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x00_Initial			
+	MainSequence	TEST: Set State Measue IVSU (IVIO)	ID#:B+nlgk7l90i0PHsU7Uq3cC	IVSU_State0x0F_Initial	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x0F_Initial			
+	MainSequence	TEST: Set State Measue IVSU (IVIO)	ID#:B+nlgk7l90i0PHsU7Uq3cC	IVSU_State0xF0_Initial	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0xF0_Initial			
+	MainSequence	TEST: R_FREE per Throw Initial	ID#:bcKwjlRxEkGSYVgItk0WLD	RF1	1		20000	200000	GELE		Ohm	Numeric Limit	26	RF1			
+	MainSequence	TEST: R_FREE per Throw Initial	ID#:bcKwjlRxEkGSYVgItk0WLD	RF2	2		20000	200000	GELE		Ohm	Numeric Limit	29	RF2			
+	MainSequence	TEST: R_FREE per Throw Initial	ID#:bcKwjlRxEkGSYVgItk0WLD	RF3	3		20000	200000	GELE		Ohm	Numeric Limit	29	RF3			
+	MainSequence	TEST: R_FREE per Throw Initial	ID#:bcKwjlRxEkGSYVgItk0WLD	RF4	4		0	100	GELE		Ohm	Numeric Limit	29	RF4			
+	MainSequence	TEST: R_FREE per Throw Initial	ID#:bcKwjlRxEkGSYVgItk0WLD	Rfree	5		20000	200000	GELE		Ohm	Numeric Limit	26	Rfree			
+	MainSequence	Run Engineering Mode Script	ID#:/90PwpscAUykNpjqbec6yD		No Tests												
+	MainSequence	TEST: Readback: Die Variant Reg 0x0E (14 Dec)	ID#:EYd6wOhmR02DSXxl3dPmVD	Die_Version_0x0E	1				LOG			Numeric Limit		Die_Version_0x0E		FileGlobals.Die_Variant	
+	MainSequence	 Readback Multiple Registers--Read Fuse Registers	ID#:72YLUV14zEKXsh2SEDmRbD		No Tests												
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x06	1				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[0]		
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x07	2				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[1]		
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x08	3				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[2]		
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x09	4				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[3]		
+	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x0A	5				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[4]		
+	MainSequence	TEST:Ron_Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	RF1	1		0.4	2	GELE		Ohm	Numeric Limit	29	RF1		Locals.R_Initial[1]	
+	MainSequence	TEST:Ron_Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	RF2	2		0.4	2	GELE		Ohm	Numeric Limit	29	RF2		Locals.R_Initial[2]	
+	MainSequence	TEST:Ron_Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	RF3	3		0.4	2	GELE		Ohm	Numeric Limit	29	RF3		Locals.R_Initial[3]	
+	MainSequence	TEST:Ron_Measure Series Resistance	ID#:4Iy9b7iNEkyohWV9L7XX0C	RF4	4		0.4	2	GELE		Ohm	Numeric Limit	29	RF4		Locals.R_Initial[4]	
+	MainSequence	Burnin 1k46V	ID#:17Zg6STJ/kypxIHz0n+fLC		No Tests												
+	MainSequence	Burnin 10k41V	ID#:BNrJ+W/CrkCekFvNVOUdiA		No Tests												
+	MainSequence	TEST:Ron_Measure Series Resistance_Post Burnin	ID#:W7gYBNe6RUi3Tttof2lvQA	RF1	1		0.35	1	GELE		Ohm	Numeric Limit	29	RF1		Locals.R_10K[1]	
+	MainSequence	TEST:Ron_Measure Series Resistance_Post Burnin	ID#:W7gYBNe6RUi3Tttof2lvQA	RF2	2		0.35	1	GELE		Ohm	Numeric Limit	29	RF2		Locals.R_10K[2]	
+	MainSequence	TEST:Ron_Measure Series Resistance_Post Burnin	ID#:W7gYBNe6RUi3Tttof2lvQA	RF3	3		0.35	1	GELE		Ohm	Numeric Limit	29	RF3		Locals.R_10K[3]	
+	MainSequence	TEST:Ron_Measure Series Resistance_Post Burnin	ID#:W7gYBNe6RUi3Tttof2lvQA	RF4	4		0.35	1	GELE		Ohm	Numeric Limit	29	RF4		Locals.R_10K[4]	
+	MainSequence	TEST:Ron_Measure Series Resistance_Post Burnin	ID#:W7gYBNe6RUi3Tttof2lvQA	Rd_RF1	5				LOG	m	Ohm	Numeric Limit			Locals.R_10K[1] - Locals.R_Initial[1]		
+	MainSequence	TEST:Ron_Measure Series Resistance_Post Burnin	ID#:W7gYBNe6RUi3Tttof2lvQA	Rd_RF2	6				LOG	m	Ohm	Numeric Limit			Locals.R_10K[2] - Locals.R_Initial[2]		
+	MainSequence	TEST:Ron_Measure Series Resistance_Post Burnin	ID#:W7gYBNe6RUi3Tttof2lvQA	Rd_RF3	7				LOG	m	Ohm	Numeric Limit			Locals.R_10K[3] - Locals.R_Initial[3]		
+	MainSequence	TEST:Ron_Measure Series Resistance_Post Burnin	ID#:W7gYBNe6RUi3Tttof2lvQA	Rd_RF4	8				LOG	m	Ohm	Numeric Limit			Locals.R_10K[4] - Locals.R_Initial[4]		
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_15	1				LOG		Ohm	Numeric Limit		BF_PI_15			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_16	2				LOG		Ohm	Numeric Limit		BF_PI_16			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_17	3				LOG		Ohm	Numeric Limit		BF_PI_17			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_18	4				LOG		Ohm	Numeric Limit		BF_PI_18			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_19	5				LOG		Ohm	Numeric Limit		BF_PI_19			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_20	6				LOG		Ohm	Numeric Limit		BF_PI_20			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_21	7				LOG		Ohm	Numeric Limit		BF_PI_21			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_22	8				LOG		Ohm	Numeric Limit		BF_PI_22			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_23	9				LOG		Ohm	Numeric Limit		BF_PI_23			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_24	10				LOG		Ohm	Numeric Limit		BF_PI_24			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_25	11				LOG		Ohm	Numeric Limit		BF_PI_25			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_26	12				LOG		Ohm	Numeric Limit		BF_PI_26			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_27	13				LOG		Ohm	Numeric Limit		BF_PI_27			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_28	14				LOG		Ohm	Numeric Limit		BF_PI_28			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_29	15				LOG		Ohm	Numeric Limit		BF_PI_29			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_30	16				LOG		Ohm	Numeric Limit		BF_PI_30			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_31	17				LOG		Ohm	Numeric Limit		BF_PI_31			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_32	18				LOG		Ohm	Numeric Limit		BF_PI_32			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_33	19				LOG		Ohm	Numeric Limit		BF_PI_33			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_34	20				LOG		Ohm	Numeric Limit		BF_PI_34			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_35	21				LOG		Ohm	Numeric Limit		BF_PI_35			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_36	22				LOG		Ohm	Numeric Limit		BF_PI_36			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_37	23				LOG		Ohm	Numeric Limit		BF_PI_37			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_38	24				LOG		Ohm	Numeric Limit		BF_PI_38			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_39	25				LOG		Ohm	Numeric Limit		BF_PI_39		Locals.R39	
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_40	26				LOG		Ohm	Numeric Limit		BF_PI_40			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_PI_41	27				LOG		Ohm	Numeric Limit		BF_PI_41		Locals.R41	
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_41	28				LOG		Ohm	Numeric Limit		BF_RL_41			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_40	29				LOG		Ohm	Numeric Limit		BF_RL_40			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_39	30				LOG		Ohm	Numeric Limit		BF_RL_39			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_38	31				LOG		Ohm	Numeric Limit		BF_RL_38			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_37	32				LOG		Ohm	Numeric Limit		BF_RL_37			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_36	33				LOG		Ohm	Numeric Limit		BF_RL_36			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_35	34				LOG		Ohm	Numeric Limit		BF_RL_35			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_34	35				LOG		Ohm	Numeric Limit		BF_RL_34			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_33	36				LOG		Ohm	Numeric Limit		BF_RL_33			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_32	37				LOG		Ohm	Numeric Limit		BF_RL_32			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_31	38				LOG		Ohm	Numeric Limit		BF_RL_31			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_30	39				LOG		Ohm	Numeric Limit		BF_RL_30			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_29	40				LOG		Ohm	Numeric Limit		BF_RL_29			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_28	41				LOG		Ohm	Numeric Limit		BF_RL_28			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_27	42				LOG		Ohm	Numeric Limit		BF_RL_27			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_26	43				LOG		Ohm	Numeric Limit		BF_RL_26			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_25	44				LOG		Ohm	Numeric Limit		BF_RL_25			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_24	45				LOG		Ohm	Numeric Limit		BF_RL_24			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_23	46				LOG		Ohm	Numeric Limit		BF_RL_23			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_22	47				LOG		Ohm	Numeric Limit		BF_RL_22			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_21	48				LOG		Ohm	Numeric Limit		BF_RL_21			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_20	49				LOG		Ohm	Numeric Limit		BF_RL_20			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_19	50				LOG		Ohm	Numeric Limit		BF_RL_19			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_18	51				LOG		Ohm	Numeric Limit		BF_RL_18			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_17	52				LOG		Ohm	Numeric Limit		BF_RL_17			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_16	53				LOG		Ohm	Numeric Limit		BF_RL_16			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	BF_RL_15	54				LOG		Ohm	Numeric Limit		BF_RL_15			
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	R_VPI	55				LOG			Numeric Limit		R_VPI		Locals.R_VPI	
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	R_VRL	56				LOG			Numeric Limit		R_VRL		Locals.R_VRL	
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	R_VPI1	57				LOG			Numeric Limit		R_VPI1		Locals.R_VPI1	
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	R_VRL1	58				LOG			Numeric Limit		R_VRL1		Locals.R_VRL1	
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	DVR_PI	59				LOG			Numeric Limit			Locals.R_VPI1-Locals.R_VPI		
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	DVR_RL	60				LOG			Numeric Limit			Locals.R_VRL1-Locals.R_VRL		
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	Rhyst	61				LOG			Numeric Limit			Locals.R_VPI - Locals.R_VRL		
+	MainSequence	Fast_Butterfly	ID#:OMGAL3qvg0aQapp1rnAH7B	Rsat	62				LOG			Numeric Limit			Locals.R41 - Locals.R39		
+	MainSequence	TEST: Set State Measure Shunt Resistance	ID#:HgXAGZHnPUya20iticUYWC	Rshunt_RF1	1		10	30	GELE		Ohm	Numeric Limit	64	RF1			
+	MainSequence	TEST: Set State Measure Shunt Resistance	ID#:HgXAGZHnPUya20iticUYWC	Rshunt_RF2	2		10	30	GELE		Ohm	Numeric Limit	64	RF2			
+	MainSequence	TEST: Set State Measure Shunt Resistance	ID#:HgXAGZHnPUya20iticUYWC	Rshunt_RF3	3		10	30	GELE		Ohm	Numeric Limit	64	RF3			
+	MainSequence	TEST: Set State Measure Shunt Resistance	ID#:HgXAGZHnPUya20iticUYWC	Rshunt_RF4	4		10	30	GELE		Ohm	Numeric Limit	64	RF4			
+	MainSequence	TEST: Guardian On Off	ID#:zXmcxKQ1okynKE1j4bgUqB	GuardianPilot_On	1		1	10	GELE		Ohm	Numeric Limit	61	Pilot_On			
+	MainSequence	TEST: Guardian On Off	ID#:zXmcxKQ1okynKE1j4bgUqB	GuardianPilot_Off	2		20000	200000	GELE		Ohm	Numeric Limit	61	Pilot_Off			
+	MainSequence	TEST: Set State Measure IVSU (IVIO)	ID#:Rdu+kCyBd0OTkWAhPGq0oB	IVSU_State0x0F_Final	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x0F_Final			
+	MainSequence	TEST: Set State Measure IVSU (IVIO)	ID#:Rdu+kCyBd0OTkWAhPGq0oB	IVSU_State0xF0_Final	2	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0xF0_Final			
+	MainSequence	TEST: R_FREE per Throw Final	ID#:C+xuSCdNgUWTZ0+5hB+CdA	RF1	1		85000	125000	GELE		Ohm	Numeric Limit	26	RF1			
+	MainSequence	TEST: R_FREE per Throw Final	ID#:C+xuSCdNgUWTZ0+5hB+CdA	RF2	2				LOG			Numeric Limit		RF2			
+	MainSequence	TEST: R_FREE per Throw Final	ID#:C+xuSCdNgUWTZ0+5hB+CdA	RF3	3				LOG			Numeric Limit		RF3			
+	MainSequence	TEST: R_FREE per Throw Final	ID#:C+xuSCdNgUWTZ0+5hB+CdA	RF4	4				LOG			Numeric Limit		RF4			
+	MainSequence	TEST: R_FREE per Throw Final	ID#:C+xuSCdNgUWTZ0+5hB+CdA	Rfree	5				LOG			Numeric Limit		Rfree			
+	MainSequence	TEST: - IVIO (IVSU) KGD	ID#:+BePO3P10UasPw73g2MfXC	IVSU_State0x00_Final	1	VSU	50	100	GELE		uA	Numeric Limit	15	IVSU_State0x00_Final			
+	MainSequence	TEST: - IVIO (IVSU) KGD	ID#:+BePO3P10UasPw73g2MfXC	IVSU_LowPower_Final	2	VSU	0	6	GELE		uA	Numeric Limit	14	IVSU_LowPower_Final			
+	MainSequence	Bridge Command_Turn off SuBUS A. Reg 0x06	ID#:GOD6nbD3ZUizvOEerjmzJA		No Tests												
+	MainSequence	Utility - Power off VSU only. This will turn off power to DUT and keep bridge initialized	ID#:ZXA6Aol+zkaFWSSIBKKbzD		No Tests												
+	ProcessCleanup	Close Sessions	ID#:HuqeV13gZEO1jLcQP6AV5A		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write Bridge Initialization Script	ID#:eVCjFzMXW0qHqG35WoE1CB		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write USID2 Burnin10k41V Script	ID#:/xkPIrlA6kG/OxiBwnwLHC		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write USID4 Burnin10k41V Script	ID#:w46C6HexiEC/RwCg4ZTkUB		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write USID2 Burnin1k46V Script	ID#:HTPcvqvAs06HgatsKLOyhD		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write USID4 Burnin1k46V Script	ID#:Y5twohxKVUiKy92c9Q/xyD		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write USID 0x0E Burnin1k46V Script	ID#:MyBtRcN/ZEePFkfZzT1N5B		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write USID1 Burnin1k46VScript	ID#:PSudt6KdDkebTp9myx3VCA		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write USID9 Burnin1k46V Script	ID#:SXaSp1w56ESwQ1uQBWiP+D		No Tests												
+	Read_Scripts	HSDIO- Read Script from File_Write USID7 Burnin1k46V Script	ID#:ZO5AZaMm20C4ADyZl556bB		No Tests												
+	Initialize Bridge	HSDIO- Set VIO Level- 1.8V	ID#:5pLWyK6Wa0iAcZN07Aqc0B		No Tests												
+	Initialize Bridge	SMU - Configure VIO_Bridge, VSU to 1.8V	ID#:iBmi6PtfT0a14/PYFRUYXC		No Tests												
+	Initialize Bridge	Initialize Bridge Chip with Script	ID#:1Xs3C2nDoUGgFd16IrYC7C		No Tests												
+	Initialize Bridge	SMU - Configure VSU 0V	ID#:5z57nB/oEkqHuJV/Eecf9A		No Tests												
+	Scan USID_Contact Check	HSDIO- Set VIO Level- 1.8V	ID#:3uV0BvuZbke671CL6NTgmC		No Tests												
+	Scan USID_Contact Check	Bridge Command_Turn on SuBUS A. Reg 0x06	ID#:lwYgCv1TAECYuGEJFHJhlC		No Tests												
+	Scan USID_Contact Check	SMU - Configure VSU and VP  to 1.8V	ID#:i6WQSnP6eU2G5Y0k0OhrMC		No Tests												
+	Scan USID_Contact Check	TEST: Scan USID's	ID#:ZLLYLWBeuE2ltqRxBnZsID	Num_Of_USID	1		2	3	GELE			Numeric Limit	4	Num_Of_USID			
+	Scan USID_Contact Check	TEST: Scan USID's	ID#:ZLLYLWBeuE2ltqRxBnZsID	USID	2				LOG			Numeric Limit		USID			
+	Power Up and Set Active Mode	HSDIO- Set VIO Level- 1.8V	ID#:/PYHr3DRXkyWZkzcRmHMiD		No Tests												
+	Power Up and Set Active Mode	Utility - Power on VSU and Measure VSU(VIO)_No Log	ID#:G4/cBAl3ikegNdLZAf0DYA		No Tests												
+	Power Up and Set Active Mode	Reg Write to Reg: 0X1C(Dec 28)-  Active Mode	ID#:pOF3K+3XxU+EZsNECTD04C		No Tests												
+	Relay_Config_SP3T	Set Switch Config for: SP3T	ID#:26wosqqjnUmxYAAA1AVNpC		No Tests												
+	Relay_Config_Guardian	Set Switch Config for: Guardian	ID#:AxA+S+qAGk+Nh/XydMGVRB		No Tests												
+	Debug_Tools	 Readback: for debugging	ID#:Yt3xQ3iK0EKS7xgEMojsZA		No Tests												
+	Debug_Tools	 Readback Multiple Registers--Read Fuse Registers: Debugging	ID#:SWSOAR4L+kW9IfxUys+HnC		No Tests												
+	Debug_Tools	VSU and VP Output On	ID#:xsJxVAPC4UGazhlVKYpB0B		No Tests												
+	Debug_Tools	TEST: Meas PreFuse VSU	ID#:+T1JGIsBv0CKfzYp3xQV9B	PreFuse_VSU	110	VSU			LOG			Numeric Limit		PreFuse_VSU			
+	Debug_Tools	Configure Measurement Path--Series and Shunt	ID#:X9zKLAU9lEWuUU3Kt/vRhA		No Tests												
+	Debug_Tools	Configure Measurement Path--Guardian	ID#:hr+NP7RUtE6CHBTUy5YxGA		No Tests												
+</SemiconductorModuleTests>
