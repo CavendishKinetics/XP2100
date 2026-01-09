@@ -26,7 +26,7 @@
 	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x08	3				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[2]		
 	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x09	4				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[3]		
 	MainSequence	TEST:Log Trim Reg Readback	ID#:UtcaYvP9/0Gvf9BJTRzssA	Reg_0x0A	5				LOG			Numeric Limit			FileGlobals.Fuse_Reg_Data[4]		
-	MainSequence	TEST:Measure Series Resistance	ID#:n1yFNNFra0majjH7GMTt1B	RF1	1		0.4	2	GELE		Ohm	Numeric Limit	29	RF1		Locals.R_Initial[1]	
+	MainSequence	TEST:Measure Series Resistance	ID#:n1yFNNFra0majjH7GMTt1B	RF1	1		0.4	.5	GELE		Ohm	Numeric Limit	29	RF1		Locals.R_Initial[1]	
 	MainSequence	TEST:Measure Series Resistance	ID#:n1yFNNFra0majjH7GMTt1B	RF2	2		0.4	2	GELE		Ohm	Numeric Limit	29	RF2		Locals.R_Initial[2]	
 	MainSequence	TEST:Measure Series Resistance	ID#:n1yFNNFra0majjH7GMTt1B	RF3	3		0.4	2	GELE		Ohm	Numeric Limit	29	RF3		Locals.R_Initial[3]	
 	MainSequence	TEST:Measure Series Resistance	ID#:n1yFNNFra0majjH7GMTt1B	RF4	4		0.4	2	GELE		Ohm	Numeric Limit	29	RF4		Locals.R_Initial[4]	

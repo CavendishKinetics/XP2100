@@ -1,0 +1,30 @@
+<SemiconductorModuleTests>
+	<SequenceName>	<StepName>	<StepId>	<TestName>	<TestNumber>	<Pin>	<LowLimitExpression>	<HighLimitExpression>	<ComparisonType>	<ScalingFactor>	<Units>	<EvaluationType>	<FailBin>	<PublishedDataId>	
+	ProcessSetup	Add Sessions to Pin Map_Module Screen	ID#:Ud2F11bYFkCTr+IH2FH0tD		No Tests										
+	ProcessSetup	SMU - Configure VIO_Bridge, VSU	ID#:appbPX/u0kiBPemG6wlmQD		No Tests										
+	ProcessSetup	SMU - Configure SMU_Throw Measurment	ID#:sCuvBptzTkmyWWHylBD/nB		No Tests										
+	ProcessSetup	SMU - Configure SMU_Guardian/Pilot Measurment	ID#:M2V1gK774kCW5MGQDOt0PA		No Tests										
+	ProcessSetup	HSDIO - Configure for Waveform Generation	ID#:sWexDje2xUK5qQeasLfdUB		No Tests										
+	ProcessSetup	HSDIO - Write Waveforms for Bridge Initialization	ID#:E7PJ7hGNcEKKeqzYvietdC		No Tests										
+	ProcessSetup	HSDIO-Configure PFI Channels for Relay Control	ID#:KMlJExroRUanxgIuWsdrCB		No Tests										
+	ProcessSetup	HSDIO - Commit settings to hardware	ID#:P0E1M1XJ9kabhU+I1EfyYB		No Tests										
+	ProcessCleanup	Close Sessions	ID#:HuqeV13gZEO1jLcQP6AV5A		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write Bridge Initialization Script	ID#:eVCjFzMXW0qHqG35WoE1CB		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write USID2 Burnin10k41V Script	ID#:/xkPIrlA6kG/OxiBwnwLHC		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write USID4 Burnin10k41V Script	ID#:w46C6HexiEC/RwCg4ZTkUB		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write USID2 Burnin1k46V Script	ID#:HTPcvqvAs06HgatsKLOyhD		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write USID4 Burnin1k46V Script	ID#:Y5twohxKVUiKy92c9Q/xyD		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write USID 0x0E Burnin1k46V Script	ID#:MyBtRcN/ZEePFkfZzT1N5B		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write USID1 Burnin1k46VScript	ID#:PSudt6KdDkebTp9myx3VCA		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write USID9 Burnin1k46V Script	ID#:SXaSp1w56ESwQ1uQBWiP+D		No Tests										
+	Read_Scripts	HSDIO- Read Script from File_Write USID7 Burnin1k46V Script	ID#:ZO5AZaMm20C4ADyZl556bB		No Tests										
+	Initialize Bridge	HSDIO- Set VIO Level- 1.8V	ID#:5pLWyK6Wa0iAcZN07Aqc0B		No Tests										
+	Initialize Bridge	SMU - Configure VIO_Bridge, VSU to 1.8V	ID#:iBmi6PtfT0a14/PYFRUYXC		No Tests										
+	Initialize Bridge	Initialize Bridge Chip with Script	ID#:1Xs3C2nDoUGgFd16IrYC7C		No Tests										
+	Initialize Bridge	SMU - Configure VSU 0V	ID#:5z57nB/oEkqHuJV/Eecf9A		No Tests										
+	Scan USID_Contact Check	HSDIO- Set VIO Level- 1.8V	ID#:3uV0BvuZbke671CL6NTgmC		No Tests										
+	Scan USID_Contact Check	Bridge Command_Turn on SuBUS A. Reg 0x06	ID#:lwYgCv1TAECYuGEJFHJhlC		No Tests										
+	Scan USID_Contact Check	SMU - Configure VSU and VP  to 1.8V	ID#:i6WQSnP6eU2G5Y0k0OhrMC		No Tests										
+	Scan USID_Contact Check	Scan USID's	ID#:ZLLYLWBeuE2ltqRxBnZsID	Num_Of_USID	1		2	3	GELE			Numeric Limit	4	Num_Of_USID	
+	Scan USID_Contact Check	Scan USID's	ID#:ZLLYLWBeuE2ltqRxBnZsID	USID	2				LOG			Numeric Limit		USID	
+</SemiconductorModuleTests>
