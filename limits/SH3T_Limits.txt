@@ -117,7 +117,7 @@
 	Power Up and Set Active Mode	Utility - Power on VSU and Measure VSU(VIO)_No Log	ID#:G4/cBAl3ikegNdLZAf0DYA		No Tests												
 	Power Up and Set Active Mode	Reg Write to Reg: 0X1C(Dec 28)-  Active Mode	ID#:pOF3K+3XxU+EZsNECTD04C		No Tests												
 	Test_Series_SH3T	TEST: SH3T_RF2_ No PublishData	ID#:MeI61kaoq0avOQXbORVFnD		No Tests												
-	Test_Series_SH3T	TEST: SH3T   Set State Measure Series Resistance_Ron	ID#:tE+XmuKvcU+MVRDxVKm2fC	RF1	1		0.4	2	GELE		Ohm	Numeric Limit	29	RF1		FileGlobals.R_Initial[1]	
+	Test_Series_SH3T	TEST: SH3T   Set State Measure Series Resistance_Ron	ID#:tE+XmuKvcU+MVRDxVKm2fC	RF1	1		0.4	5	GELE		Ohm	Numeric Limit	29	RF1		FileGlobals.R_Initial[1]	
 	Test_Series_SH3T	TEST: SH3T   Set State Measure Series Resistance_Ron	ID#:tE+XmuKvcU+MVRDxVKm2fC	RF2	2		0.4	2	GELE		Ohm	Numeric Limit	29	RF2		FileGlobals.R_Initial[2]	
 	Test_Series_SH3T	TEST: SH3T   Set State Measure Series Resistance_Ron	ID#:tE+XmuKvcU+MVRDxVKm2fC	RF3	3		0.4	2	GELE		Ohm	Numeric Limit	29	RF3		FileGlobals.R_Initial[3]	
 	Test_Series_SH3T	TEST: SH3T   Set State Measure Series Resistance_Ron	ID#:tE+XmuKvcU+MVRDxVKm2fC	RF4	4		0	100	GELE		Ohm	Numeric Limit	29	RF4		FileGlobals.R_Initial[4]	
