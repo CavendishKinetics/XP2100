@@ -31,7 +31,7 @@ Script BridgeInit
 	Wait 20	
 	Generate	BRGu8r4Bd249
 	Wait 20	
-	Generate	BRGu8r4Dd244
+	Generate	BRGu8r4Cd244
 	Wait 20	
 	Generate	BRGu8rC1d253
 	wait 20
